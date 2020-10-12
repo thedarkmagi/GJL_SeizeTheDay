@@ -15,6 +15,8 @@ public enum roomType
 
 public class levelGeneration : MonoBehaviour
 {
+    [Range(0,1)]
+    public float additionPathBranchGeneration = 0.7f;
     public int map_x, map_y;
     public float x_roomSize, y_roomSize;
     GameObject[,] level;
@@ -130,18 +132,46 @@ public class levelGeneration : MonoBehaviour
         //cost is set now define a path I guess?
         //this is what mistakes look like
 
-        Vector2Int currentPos = new Vector2Int(entryX, 0);
-        findTheExitPath.Add(currentPos);
+        List<Vector2Int> currentPos = new List<Vector2Int>();
+
+        //Vector2Int currentPos = new Vector2Int(entryX, 0);
+        currentPos.Add(new Vector2Int(entryX, 0));
+        findTheExitPath.Add(currentPos[0]);
         int i = 0;
         while(true)
         {
-            currentPos = findCheapest(currentPos);
-            findTheExitPath.Add(currentPos);
-            if (moveCost[currentPos.x,currentPos.y] == 0)
+            for (int c = 0; c < currentPos.Count; c++)
             {
-                Debug.Log("found path to exit");
-                break;
+                currentPos[c] = findCheapest(currentPos[c]);
+                findTheExitPath.Add(currentPos[0]);
+
+                if (Random.Range(0, 1.0f) < additionPathBranchGeneration)
+                {
+                    var newBranch = find2ndCheapest(currentPos[c]);
+                    currentPos.Add(newBranch);
+                    //currentPos 
+
+
+
+                    findTheExitPath.Add(newBranch);
+                }
+
+
+                if (moveCost[currentPos[c].x, currentPos[c].y] == 0)
+                {
+                    Debug.Log("found path to exit");
+                    i = 1000;
+                    break;
+                }
             }
+            //currentPos[0] = findCheapest(currentPos[0]);
+            //findTheExitPath.Add(currentPos[0]);
+
+            //if (moveCost[currentPos.x,currentPos.y] == 0)
+            //{
+            //    Debug.Log("found path to exit");
+            //    break;
+            //}
 
             i++;
             if(i > 100)
@@ -196,6 +226,52 @@ public class levelGeneration : MonoBehaviour
             if (checkInsideBounds(m_x, m_y))
             {
                 if(moveCost[m_x,m_y] < currentCost)
+                {
+                    currentCost = moveCost[m_x, m_y];
+                    cheapest = new Vector2Int(m_x, m_y);
+                }
+            }
+        }
+
+        if (roomTypes[cheapest.x, cheapest.y] == roomType.empty)
+        {
+            roomTypes[cheapest.x, cheapest.y] = roomType.puzzleRoom;
+        }
+
+        return cheapest;
+
+    }
+    public Vector2Int find2ndCheapest(Vector2Int current)
+    {
+        Vector2Int cheapest = new Vector2Int();
+        int currentCost = int.MaxValue;
+        int minCost = int.MaxValue;
+
+        for (int i = 0; i < directions.Count; i++)
+        {
+            int m_x = current.x + directions[i].x;
+            int m_y = current.y + directions[i].y;
+
+
+            if (checkInsideBounds(m_x, m_y))
+            {
+                if (moveCost[m_x, m_y] < minCost)
+                {
+                    minCost = moveCost[m_x, m_y];
+                    //cheapest = new Vector2Int(m_x, m_y);
+                }
+            }
+        }
+
+        for (int i = 0; i < directions.Count; i++)
+        {
+            int m_x = current.x + directions[i].x;
+            int m_y = current.y + directions[i].y;
+
+
+            if (checkInsideBounds(m_x, m_y))
+            {
+                if (moveCost[m_x, m_y] < currentCost && moveCost[m_x, m_y] > minCost)
                 {
                     currentCost = moveCost[m_x, m_y];
                     cheapest = new Vector2Int(m_x, m_y);
