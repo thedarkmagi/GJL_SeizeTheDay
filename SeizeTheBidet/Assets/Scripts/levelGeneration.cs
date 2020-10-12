@@ -15,6 +15,7 @@ public enum roomType
 
 public class levelGeneration : MonoBehaviour
 {
+    public GameObject Player;
     [Range(0,1)]
     public float additionPathBranchGeneration = 0.7f;
     public int map_x, map_y;
@@ -49,6 +50,10 @@ public class levelGeneration : MonoBehaviour
         defineRooms();
         generateGrid();
 
+        if(Player!=null)
+        {
+            Player.transform.position = level[entryX, 0].transform.position;
+        }
     }
 
     // Update is called once per frame
