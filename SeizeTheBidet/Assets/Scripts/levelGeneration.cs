@@ -33,6 +33,9 @@ public class levelGeneration : MonoBehaviour
     List<Vector2Int> directions;
 
     List<Vector2Int> findTheExitPath = new List<Vector2Int>();
+
+
+    public bool post_pee;
     // Start is called before the first frame update
     void Start()
     {
@@ -59,7 +62,27 @@ public class levelGeneration : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(post_pee)
+        {
+            //postPee();
+        }
         
+    }
+
+    public void postPee()
+    {
+        for (int m_x = 0; m_x < map_x; m_x++)
+        {
+            for (int m_y = 0; m_y < map_y; m_y++)
+            {
+                if(roomTypes[m_x, m_y] == roomType.puzzleRoom)
+                {
+                    level[m_x, m_y].GetComponent<RoomScript>().lockDoors();
+                }
+            }
+        }
+
+        //post_pee = false;
     }
 
     public void defineRooms()
