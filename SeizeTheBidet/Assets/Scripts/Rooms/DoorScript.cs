@@ -30,7 +30,13 @@ public class DoorScript : MonoBehaviour
 
     public void OpenDoor()
     {
-        Destroy(this.gameObject);
+        this.gameObject.SetActive(false);
+        //Destroy(this.gameObject);
+    }
+
+    public void CloseDoor()
+    {
+        this.gameObject.SetActive(true);
     }
 
     public void findAdjacentDoor()
@@ -44,7 +50,7 @@ public class DoorScript : MonoBehaviour
             {
                 adjencentDoor = hit.collider.gameObject.GetComponent<DoorScript>();
             }
-            print("There is something in front of the object!");
+            //print("There is something in front of the object!");
         }
         if (Physics.Raycast(transform.position, bkwd, out hit, MaxDistance))
         {
@@ -52,7 +58,7 @@ public class DoorScript : MonoBehaviour
             {
                 adjencentDoor = hit.collider.gameObject.GetComponent<DoorScript>();
             }
-            print("There is something in behind of the object!");
+            //print("There is something in behind of the object!");
         }
     }
 
@@ -63,7 +69,8 @@ public class DoorScript : MonoBehaviour
             if (other.gameObject.CompareTag("Player"))
             {
                 OpenDoor();
-                adjencentDoor.OpenDoor();
+                if(adjencentDoor!=null)
+                    adjencentDoor.OpenDoor();
             }
         }
         if (other.gameObject.CompareTag("Door"))

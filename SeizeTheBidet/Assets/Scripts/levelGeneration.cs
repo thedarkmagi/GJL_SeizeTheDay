@@ -9,6 +9,7 @@ public enum roomType
     entry,
     puzzleRoom,
     bathroom,
+    voidRoom,
 }
 
 
@@ -27,12 +28,16 @@ public class levelGeneration : MonoBehaviour
     public GameObject room;
     public GameObject entryRoom;
     public GameObject EndRoom;
+    public GameObject voidRoom;
 
     int entryX;
 
     List<Vector2Int> directions;
 
     List<Vector2Int> findTheExitPath = new List<Vector2Int>();
+
+
+    public bool post_pee;
     // Start is called before the first frame update
     void Start()
     {
@@ -59,7 +64,27 @@ public class levelGeneration : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(post_pee)
+        {
+            //postPee();
+        }
         
+    }
+
+    public void postPee()
+    {
+        for (int m_x = 0; m_x < map_x; m_x++)
+        {
+            for (int m_y = 0; m_y < map_y; m_y++)
+            {
+                if(roomTypes[m_x, m_y] == roomType.puzzleRoom)
+                {
+                    level[m_x, m_y].GetComponent<RoomScript>().lockDoors();
+                }
+            }
+        }
+
+        //post_pee = false;
     }
 
     public void defineRooms()
@@ -102,6 +127,7 @@ public class levelGeneration : MonoBehaviour
             //this might have been a terrible approach going to try something else
             //ensureYouCanGetToEnd(endRoom);
             aStarApproach(endRoom);
+            addVoidRooms();
         }
     }
 
@@ -522,6 +548,32 @@ public class levelGeneration : MonoBehaviour
     }
 
 
+    public void addVoidRooms()
+    {
+        for (int m_x = 0; m_x < map_x; m_x++)
+        {
+            for (int m_y = 0; m_y < map_y; m_y++)
+            {
+                Vector3 pos = new Vector3(m_x * x_roomSize, 0, m_y * y_roomSize);
+
+                switch (roomTypes[m_x, m_y])
+                {
+                    case roomType.notSet:
+                        roomTypes[m_x, m_y] = roomType.voidRoom;
+                        break;
+                    case roomType.empty:
+                        roomTypes[m_x, m_y] = roomType.voidRoom;
+                        break;
+                        break;
+                    default:
+                        break;
+                }
+
+
+            }
+        }
+    }
+
     public void generateGrid()
     {
         for (int m_x = 0; m_x < map_x; m_x++)
@@ -549,6 +601,11 @@ public class levelGeneration : MonoBehaviour
                     case roomType.bathroom:
                         var m_roomEnd = Instantiate(EndRoom, pos, Quaternion.identity);
                         level[m_x, m_y] = m_roomEnd;
+                        level[m_x, m_y].transform.parent = this.transform;
+                        break;
+                    case roomType.voidRoom:
+                        var m_voidRoom = Instantiate(voidRoom, pos, Quaternion.identity);
+                        level[m_x, m_y] = m_voidRoom;
                         level[m_x, m_y].transform.parent = this.transform;
                         break;
                     default:
