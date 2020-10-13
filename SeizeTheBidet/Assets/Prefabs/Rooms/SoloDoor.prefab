@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &8110155524033052325
+--- !u!1 &2545826651887591992
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,46 +8,48 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8919062223638832159}
-  - component: {fileID: 5505936705642179514}
-  - component: {fileID: 7750117762303188848}
-  - component: {fileID: 4016722117804667996}
+  - component: {fileID: 2891108055373265026}
+  - component: {fileID: 2283497497529956135}
+  - component: {fileID: 4058987541181023213}
+  - component: {fileID: 2138012712198948389}
+  - component: {fileID: 4545289947896707367}
+  - component: {fileID: 7573727780936411170}
   m_Layer: 0
-  m_Name: Bathroom
-  m_TagString: Untagged
+  m_Name: SoloDoor
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8919062223638832159
+--- !u!4 &2891108055373265026
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8110155524033052325}
+  m_GameObject: {fileID: 2545826651887591992}
   m_LocalRotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
-  m_LocalPosition: {x: 14.492175, y: 0.000000454389, z: 29.454567}
+  m_LocalPosition: {x: 18.47548, y: 27.959253, z: -10.141676}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &5505936705642179514
+--- !u!33 &2283497497529956135
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8110155524033052325}
-  m_Mesh: {fileID: 4449972395251262380, guid: 65604f34649f683438688e7c7b1fcf86, type: 3}
---- !u!23 &7750117762303188848
+  m_GameObject: {fileID: 2545826651887591992}
+  m_Mesh: {fileID: 5779197439840542771, guid: 1be41c9f29bfd664186f2bc141ead25f, type: 3}
+--- !u!23 &4058987541181023213
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8110155524033052325}
+  m_GameObject: {fileID: 2545826651887591992}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -59,7 +61,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 3e2b862318f3979489f9a0790cdbd8b1, type: 2}
+  - {fileID: 670224309865224971, guid: 1be41c9f29bfd664186f2bc141ead25f, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -80,17 +82,43 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &4016722117804667996
+--- !u!64 &2138012712198948389
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8110155524033052325}
+  m_GameObject: {fileID: 2545826651887591992}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 4449972395251262380, guid: 65604f34649f683438688e7c7b1fcf86, type: 3}
+  m_Mesh: {fileID: 5779197439840542771, guid: 1be41c9f29bfd664186f2bc141ead25f, type: 3}
+--- !u!114 &4545289947896707367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2545826651887591992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0788c5f2ec05594ab740df181cd16e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  doorOpenable: 0
+--- !u!65 &7573727780936411170
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2545826651887591992}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.2001798, y: 5.789553, z: 3.0628357}
+  m_Center: {x: 0, y: 2.8947766, z: -0.03906858}
