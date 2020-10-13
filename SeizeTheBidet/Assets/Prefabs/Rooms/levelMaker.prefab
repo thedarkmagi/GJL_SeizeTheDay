@@ -43,12 +43,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cf252acc3b65984989f061d56d5da5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Player: {fileID: 0}
   additionPathBranchGeneration: 0.296
   map_x: 5
   map_y: 5
   x_roomSize: 10.16
   y_roomSize: 10.16
   room: {fileID: 7523319949671772513, guid: 9b423f5a08f146d44a4079fce084572c, type: 3}
-  entryRoom: {fileID: 8110155524033052325, guid: fe382578142bff34f94001e9a8ac4bcd,
+  entryRoom: {fileID: 823781367970134145, guid: 0a40ab72722f98244b7700e30acf28b1,
     type: 3}
   EndRoom: {fileID: 8110155524033052325, guid: fe382578142bff34f94001e9a8ac4bcd, type: 3}
+  voidRoom: {fileID: 3292370712854821200, guid: 39cce36f407ce054691af1578ec7a612,
+    type: 3}
+  post_pee: 0

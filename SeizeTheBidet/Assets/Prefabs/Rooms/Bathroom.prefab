@@ -102,12 +102,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6960538832882851935}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 724d31264653fd942b25892dcf969a82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  room: {fileID: 0}
+  room: {fileID: 2303572835594307340}
   unlockedRoomMat: {fileID: 2100000, guid: 30cd859889061244fba284915e4c4e5b, type: 2}
 --- !u!114 &8762036546831351905
 MonoBehaviour:

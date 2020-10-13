@@ -50,7 +50,7 @@ public class DoorScript : MonoBehaviour
             {
                 adjencentDoor = hit.collider.gameObject.GetComponent<DoorScript>();
             }
-            print("There is something in front of the object!");
+            //print("There is something in front of the object!");
         }
         if (Physics.Raycast(transform.position, bkwd, out hit, MaxDistance))
         {
@@ -58,7 +58,7 @@ public class DoorScript : MonoBehaviour
             {
                 adjencentDoor = hit.collider.gameObject.GetComponent<DoorScript>();
             }
-            print("There is something in behind of the object!");
+            //print("There is something in behind of the object!");
         }
     }
 
