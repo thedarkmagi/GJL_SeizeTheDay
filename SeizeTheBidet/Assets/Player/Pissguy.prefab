@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 417723729089614700}
   - component: {fileID: 3984390009728307052}
   - component: {fileID: 6832664035544613510}
+  - component: {fileID: 4938446889681702967}
   m_Layer: 0
   m_Name: Pissguy
   m_TagString: Player
@@ -625,6 +626,23 @@ MonoBehaviour:
   useBarkTitlePicker: 1
   useQuestNamePicker: 1
   selectedDatabase: {fileID: 11400000, guid: ea286b85fb5df5a49b73093de87b54a7, type: 2}
+--- !u!111 &4938446889681702967
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 506896351063187789}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 0}
+  m_Animations:
+  - {fileID: 7400000, guid: 37eb3619dbe5d0e468e847a8310528bd, type: 2}
+  - {fileID: 7400000, guid: 1f233df8906a9994c9d0b486b6d310f2, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &507384783081824521
 GameObject:
   m_ObjectHideFlags: 0
@@ -652,7 +670,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 507384783081824521}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.567, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 504431274021602201}
