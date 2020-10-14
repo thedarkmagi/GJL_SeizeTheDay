@@ -79,7 +79,8 @@ public class levelGeneration : MonoBehaviour
             {
                 if(roomTypes[m_x, m_y] == roomType.puzzleRoom)
                 {
-                    level[m_x, m_y].GetComponent<RoomScript>().lockDoors();
+                    //not actually desired behavour was purely as a test
+                    //level[m_x, m_y].GetComponent<RoomScript>().lockDoors();
                 }
             }
         }
@@ -613,6 +614,23 @@ public class levelGeneration : MonoBehaviour
                 }
 
 
+            }
+        }
+
+        // adds an external set of rooms from the array that will be all void rooms 
+        //to ensure no falling out of the map 
+        //as this only does things on the boarder of the array effectively
+        for (int x = -1; x < map_x+1; x++)
+        {
+            for (int y = -1; y < map_y+1; y++)
+            {
+                if(x==-1 || y == -1 || y == map_y || x == map_x)
+                {
+                    Vector3 pos = new Vector3(x * x_roomSize, 0, y * y_roomSize);
+                    var m_voidRoom = Instantiate(voidRoom, pos, Quaternion.identity);
+                    m_voidRoom.transform.parent = this.transform;
+                    
+                }
             }
         }
     }
