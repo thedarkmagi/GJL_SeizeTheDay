@@ -7,6 +7,7 @@ public class puzzlePieces : MonoBehaviour
 
     public bool complete;
     public Material clearedMatt;
+    public string tag= "Melee";
 
     MeshRenderer meshRenderer;
     // Start is called before the first frame update
@@ -25,9 +26,12 @@ public class puzzlePieces : MonoBehaviour
     {
         if (other.tag == "Melee")
         {
-            //Destroy(gameObject);// for now, apply a damage method here
-            complete = true;
-            meshRenderer.material = clearedMatt;
+            if (other.GetComponent<MeleeAttack>().currentEquipment.tag == tag)
+            {
+                //Destroy(gameObject);// for now, apply a damage method here
+                complete = true;
+                meshRenderer.material = clearedMatt;
+            }
         }
     }
 }

@@ -43,6 +43,7 @@ public class DoorScript : MonoBehaviour
     public void OpenDoor()
     {
         this.gameObject.SetActive(false);
+        hasBeenPreviouslyUnlocked = true;
         //Destroy(this.gameObject);
     }
 
@@ -51,7 +52,7 @@ public class DoorScript : MonoBehaviour
         if (gameObject.activeSelf!=true)
         {
             meshRenderer.material = prevouslyUnlockedDoor;
-            hasBeenPreviouslyUnlocked = true;
+            //hasBeenPreviouslyUnlocked = true;
             this.gameObject.SetActive(true);
         }
         

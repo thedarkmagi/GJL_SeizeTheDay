@@ -58,6 +58,8 @@ public class PuzzleController : MonoBehaviour
                 {
                     if (room != null)
                         room.openDoors = true;
+
+                    // clear matches or something 
                 }
             }
         }
