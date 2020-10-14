@@ -52,7 +52,8 @@ MonoBehaviour:
   room: {fileID: 7523319949671772513, guid: 9b423f5a08f146d44a4079fce084572c, type: 3}
   puzzleRooms:
   - {fileID: 7523319949671772513, guid: 7c6686a5e23df3b499efa435d286eb85, type: 3}
-  - {fileID: 7523319949671772513, guid: 9b423f5a08f146d44a4079fce084572c, type: 3}
+  - {fileID: 7523319949671772513, guid: aa1b376ef036a974589b9c449da55b10, type: 3}
+  - {fileID: 7523319949671772513, guid: 22cb4e486afbad848a9169a5f84cf228, type: 3}
   entryRoom: {fileID: 823781367970134145, guid: 0a40ab72722f98244b7700e30acf28b1,
     type: 3}
   EndRoom: {fileID: 8110155524033052325, guid: fe382578142bff34f94001e9a8ac4bcd, type: 3}

@@ -28,6 +28,7 @@ public class ActivatePiss : MonoBehaviour
             
             room.closeDoors();
             gameController.instance.pre_pee = false;
+            gameController.instance.depletePissMeter();
         }
 
     }

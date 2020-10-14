@@ -46,4 +46,24 @@ public class gameController : MonoBehaviour
             }
         }
     }
+
+    public void depletePissMeter()
+    {
+        StartCoroutine("depletePiss");
+    }
+
+    //this doesn't work currently look into it 
+    Coroutine depletePiss()
+    {
+        do
+        {
+            Pee_curTimeTillGameOver -= Time.deltaTime;
+            slider.value = Pee_curTimeTillGameOver;
+
+            return null;
+        } while (slider.value > 0);
+
+
+         
+    }
 }
