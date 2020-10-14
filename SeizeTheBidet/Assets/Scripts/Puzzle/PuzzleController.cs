@@ -47,6 +47,8 @@ public class PuzzleController : MonoBehaviour
                 {
                     if (room != null)
                         room.openDoors = true;
+                    FindObjectOfType<MeleeAttack>().disableEquipment();
+                    pre_peeChallenge = false;
                 }
             }
         }
@@ -58,7 +60,8 @@ public class PuzzleController : MonoBehaviour
                 {
                     if (room != null)
                         room.openDoors = true;
-
+                    FindObjectOfType<MeleeAttack>().disableEquipment();
+                    post_peeChallenge = false;
                     // clear matches or something 
                 }
             }

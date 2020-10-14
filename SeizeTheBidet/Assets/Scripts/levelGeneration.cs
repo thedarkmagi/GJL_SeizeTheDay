@@ -29,7 +29,7 @@ public class levelGeneration : MonoBehaviour
     public List<GameObject> puzzleRooms;
     public GameObject entryRoom;
     public GameObject EndRoom;
-    public GameObject voidRoom;
+    public List<GameObject> voidRooms;
 
     int entryX;
 
@@ -608,7 +608,8 @@ public class levelGeneration : MonoBehaviour
                         level[m_x, m_y].transform.parent = this.transform;
                         break;
                     case roomType.voidRoom:
-                        var m_voidRoom = Instantiate(voidRoom, pos, Quaternion.identity);
+                        int randVoid = Random.Range(0, voidRooms.Count);
+                        var m_voidRoom = Instantiate(voidRooms[randVoid], pos, Quaternion.identity);
                         level[m_x, m_y] = m_voidRoom;
                         level[m_x, m_y].transform.parent = this.transform;
                         break;
@@ -630,7 +631,8 @@ public class levelGeneration : MonoBehaviour
                 if(x==-1 || y == -1 || y == map_y || x == map_x)
                 {
                     Vector3 pos = new Vector3(x * x_roomSize, 0, y * y_roomSize);
-                    var m_voidRoom = Instantiate(voidRoom, pos, Quaternion.identity);
+                    int randVoid = Random.Range(0, voidRooms.Count);
+                    var m_voidRoom = Instantiate(voidRooms[randVoid], pos, Quaternion.identity);
                     m_voidRoom.transform.parent = this.transform;
                     
                 }

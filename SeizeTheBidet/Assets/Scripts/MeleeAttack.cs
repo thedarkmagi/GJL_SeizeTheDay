@@ -11,13 +11,16 @@ public class MeleeAttack : MonoBehaviour
 
     MeshFilter mesh;
     MeshRenderer mRenderer;
+    BoxCollider collider;
 
     private void Start()
     {
         mesh = GetComponent<MeshFilter>();
         mRenderer = GetComponent<MeshRenderer>();
+        collider = GetComponent<BoxCollider>();
         anim = GetComponent<Animator>();
 
+        disableEquipment();
     }
 
     // Update is called once per frame
@@ -33,8 +36,18 @@ public class MeleeAttack : MonoBehaviour
     public void setEquipment(equipment newEquip)
     {
         currentEquipment = newEquip;
+        mRenderer.enabled =true;
+        collider.enabled = true;
+
         mesh.mesh = currentEquipment.mesh;
         mRenderer.material = currentEquipment.material;
         //gameObject.tag = currentEquipment.tag;
+    }
+
+    public void disableEquipment()
+    {
+        //mesh.
+        mRenderer.enabled = false;
+        collider.enabled = false;
     }
 }
