@@ -121,6 +121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02057450289365842a7159b3c37340e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  room: {fileID: 2303572835594307340}
   level: {fileID: 0}
 --- !u!1 &8110155524033052325
 GameObject:

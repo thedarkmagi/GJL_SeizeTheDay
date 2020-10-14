@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ActivatePiss : MonoBehaviour
 {
-
+    public RoomScript room;
     public levelGeneration level;
     // Start is called before the first frame update
     void Start()
@@ -23,8 +23,11 @@ public class ActivatePiss : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            if (level != null)
-                level.postPee();
+            //if (level != null)
+            //    level.postPee();
+            
+            room.closeDoors();
+            gameController.instance.pre_pee = false;
         }
 
     }

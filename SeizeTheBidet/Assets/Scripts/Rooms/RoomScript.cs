@@ -36,6 +36,15 @@ public class RoomScript : MonoBehaviour
         for (int i = 0; i < doors.Count; i++)
         {
             doors[i].CloseDoor();
+            doors[i].doorOpenable = false;
         }
     }
+    public void closeDoors()
+    {
+        for (int i = 0; i < doors.Count; i++)
+        {
+            doors[i].CloseDoor();
+        }
+    }
+
 }

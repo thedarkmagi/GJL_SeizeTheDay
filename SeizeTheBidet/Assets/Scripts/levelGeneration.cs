@@ -26,6 +26,7 @@ public class levelGeneration : MonoBehaviour
 
     int[,] moveCost;
     public GameObject room;
+    public List<GameObject> puzzleRooms;
     public GameObject entryRoom;
     public GameObject EndRoom;
     public GameObject voidRoom;
@@ -57,7 +58,8 @@ public class levelGeneration : MonoBehaviour
 
         if(Player!=null)
         {
-            Player.transform.position = level[entryX, 0].transform.position;
+            Player.transform.position = level[entryX, 0].GetComponent<StartRoomPos>().getSpawnPos().position;
+            //Player.transform.position = level[entryX, 0].transform.position;
         }
     }
 
@@ -595,7 +597,8 @@ public class levelGeneration : MonoBehaviour
                         level[m_x, m_y].transform.parent = this.transform;
                         break;
                     case roomType.puzzleRoom:
-                        var m_room = Instantiate(room, pos, Quaternion.identity);
+                        int randRoom = Random.Range(0, puzzleRooms.Count);
+                        var m_room = Instantiate(puzzleRooms[randRoom], pos, Quaternion.identity);
                         level[m_x, m_y] = m_room;
                         level[m_x, m_y].transform.parent = this.transform;
                         break;

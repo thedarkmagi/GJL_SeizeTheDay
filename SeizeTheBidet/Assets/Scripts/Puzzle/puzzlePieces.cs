@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class unlockDoorsTrigger : MonoBehaviour
+public class puzzlePieces : MonoBehaviour
 {
-    public RoomScript room;
-    public Material unlockedRoomMat;
+
+    public bool complete;
+    public Material clearedMatt;
 
     MeshRenderer meshRenderer;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -23,14 +23,11 @@ public class unlockDoorsTrigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (other.tag == "Melee")
         {
-            if (room != null)
-            {
-                //room.closeDoors();
-                room.openDoors = true;
-            }
-            meshRenderer.material = unlockedRoomMat;
+            //Destroy(gameObject);// for now, apply a damage method here
+            complete = true;
+            meshRenderer.material = clearedMatt;
         }
     }
 }

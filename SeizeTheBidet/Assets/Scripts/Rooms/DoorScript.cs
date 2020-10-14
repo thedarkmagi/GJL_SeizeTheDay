@@ -10,10 +10,15 @@ public class DoorScript : MonoBehaviour
     DoorScript adjencentDoor;
 
     bool firstFrame;
+    public Material prevouslyUnlockedDoor;
+    MeshRenderer meshRenderer;
 
+    bool hasBeenPreviouslyUnlocked;
     // Start is called before the first frame update
     void Start()
     {
+        meshRenderer = GetComponent<MeshRenderer>();
+        hasBeenPreviouslyUnlocked = false;
         firstFrame = true;
         findAdjacentDoor();
     }
@@ -26,6 +31,13 @@ public class DoorScript : MonoBehaviour
             findAdjacentDoor();
             firstFrame = false;
         }
+
+        if(doorOpenable && hasBeenPreviouslyUnlocked)
+        {
+            OpenDoor();
+            if(adjencentDoor!=null)
+                    adjencentDoor.OpenDoor();
+        }
     }
 
     public void OpenDoor()
@@ -36,7 +48,13 @@ public class DoorScript : MonoBehaviour
 
     public void CloseDoor()
     {
-        this.gameObject.SetActive(true);
+        if (gameObject.activeSelf!=true)
+        {
+            meshRenderer.material = prevouslyUnlockedDoor;
+            hasBeenPreviouslyUnlocked = true;
+            this.gameObject.SetActive(true);
+        }
+        
     }
 
     public void findAdjacentDoor()

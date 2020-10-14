@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1183976910235785556}
   - component: {fileID: 5502805888708850296}
   - component: {fileID: 3248974570080157071}
+  - component: {fileID: 6948255806384771554}
   m_Layer: 0
   m_Name: StartRoom
   m_TagString: Untagged
@@ -99,7 +100,7 @@ MeshCollider:
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 4449972395251262380, guid: 65604f34649f683438688e7c7b1fcf86, type: 3}
+  m_Mesh: {fileID: 6200483854013625544, guid: 5b376fb061134484e98fee866a5e5a5f, type: 3}
 --- !u!114 &3248974570080157071
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -118,6 +119,19 @@ MonoBehaviour:
   - {fileID: 8081140963758251073}
   - {fileID: 5990039684288504695}
   openDoors: 1
+--- !u!114 &6948255806384771554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 823781367970134145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ed04150a5ca07b4dbcacd56eabc47d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnPos: {fileID: 6533333790212035754}
 --- !u!1 &6533333790212035754
 GameObject:
   m_ObjectHideFlags: 0
@@ -141,13 +155,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6533333790212035754}
-  m_LocalRotation: {x: -0.000000021855694, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.09, y: -0, z: -3.28}
+  m_LocalRotation: {x: -0.000000015552608, y: 0.7025819, z: -0.000000015355406, w: 0.711603}
+  m_LocalPosition: {x: 0.09000015, y: -1.4210855e-14, z: -3.2800007}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 10546956719989307}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 89.269005, z: 0}
 --- !u!1001 &3996049721972031972
 PrefabInstance:
   m_ObjectHideFlags: 0
