@@ -139,7 +139,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &148605378
 RectTransform:
   m_ObjectHideFlags: 0
@@ -469,7 +469,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &755393932
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1321,6 +1321,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4845896144898477317, guid: 5d8c7058440847d479ffa2652352638c,
         type: 3}
+      propertyPath: puzzleRooms.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4845896144898477317, guid: 5d8c7058440847d479ffa2652352638c,
+        type: 3}
       propertyPath: Player
       value: 
       objectReference: {fileID: 646853152}
@@ -1335,6 +1340,12 @@ PrefabInstance:
       propertyPath: puzzleRoom.Array.data[1]
       value: 
       objectReference: {fileID: 7523319949671772513, guid: 9b423f5a08f146d44a4079fce084572c,
+        type: 3}
+    - target: {fileID: 4845896144898477317, guid: 5d8c7058440847d479ffa2652352638c,
+        type: 3}
+      propertyPath: puzzleRooms.Array.data[3]
+      value: 
+      objectReference: {fileID: 7523319949671772513, guid: ff12921b8acde8442a10a0bb2b8a1ecb,
         type: 3}
     - target: {fileID: 4845896144898477322, guid: 5d8c7058440847d479ffa2652352638c,
         type: 3}

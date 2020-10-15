@@ -139,6 +139,9 @@ GameObject:
   - component: {fileID: 382735596546782004}
   - component: {fileID: 199572914738790330}
   - component: {fileID: 199572914738790331}
+  - component: {fileID: 4923927904906474232}
+  - component: {fileID: 8549328553627811619}
+  - component: {fileID: 9098579110731268819}
   m_Layer: 0
   m_Name: DrunkSkelli
   m_TagString: Untagged
@@ -197,6 +200,47 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &4923927904906474232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1010054622227802510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 821145eff7cb04c4f860fecdf0deaf75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  complete: 0
+  clearedMesh: {fileID: 0}
+  tag: 
+--- !u!65 &8549328553627811619
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1010054622227802510}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 8.072082, y: 13.089762, z: 6.0770693}
+  m_Center: {x: -0.8556279, y: 6.0448804, z: 0.2961711}
+--- !u!114 &9098579110731268819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1010054622227802510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 261206a7c4f67e44384dbd26c886561a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puzzlePieces: {fileID: 4923927904906474232}
 --- !u!1 &1360816874462086106
 GameObject:
   m_ObjectHideFlags: 0

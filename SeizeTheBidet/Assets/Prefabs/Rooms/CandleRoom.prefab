@@ -281,6 +281,7 @@ MonoBehaviour:
   - {fileID: 6126028333795876482}
   pre_peeChallenge: 0
   post_peeChallenge: 1
+  postSolved: 0
 --- !u!1001 &756611987511252955
 PrefabInstance:
   m_ObjectHideFlags: 0
