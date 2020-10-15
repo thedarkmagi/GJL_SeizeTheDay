@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class gameController : MonoBehaviour
 {
     public static gameController instance;
@@ -12,6 +13,9 @@ public class gameController : MonoBehaviour
     public float Pee_maxTimeTillGameOver;
     public Slider slider;
     float Pee_curTimeTillGameOver;
+
+    public DeathScreenFade gameOverUI;
+    public DeathScreenFade winUI;
 
     private void Awake()
     {
@@ -43,6 +47,15 @@ public class gameController : MonoBehaviour
             if(Pee_curTimeTillGameOver > Pee_maxTimeTillGameOver)
             {
                 //GAME OVER 
+                if(gameOverUI!=null)
+                {
+                    gameOverUI.activeFade();
+                }
+                else
+                {
+                    loadAnyScene("Menu");
+                }
+
             }
         }
     }
@@ -65,5 +78,22 @@ public class gameController : MonoBehaviour
 
 
          
+    }
+
+    public void loadAnyScene(string level)
+    {
+        SceneManager.LoadScene(level);
+    }
+
+    public void activateWinScreen()
+    {
+        if (winUI != null)
+        {
+            winUI.activeFade();
+        }
+        else
+        {
+            loadAnyScene("Menu");
+        }
     }
 }
