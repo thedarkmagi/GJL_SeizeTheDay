@@ -6,14 +6,16 @@ public class puzzlePieces : MonoBehaviour
 {
 
     public bool complete;
-    public Material clearedMatt;
+    public Mesh clearedMesh;
     public string tag= "Melee";
 
     MeshRenderer meshRenderer;
+    MeshFilter meshFilter;
     // Start is called before the first frame update
     void Start()
     {
         meshRenderer = GetComponent<MeshRenderer>();
+        meshFilter = GetComponent<MeshFilter>();
     }
 
     // Update is called once per frame
@@ -30,7 +32,8 @@ public class puzzlePieces : MonoBehaviour
             {
                 //Destroy(gameObject);// for now, apply a damage method here
                 complete = true;
-                meshRenderer.material = clearedMatt;
+                //meshRenderer.material = clearedMatt;
+                meshFilter.mesh = clearedMesh;
             }
         }
     }

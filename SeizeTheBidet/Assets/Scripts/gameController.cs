@@ -12,7 +12,14 @@ public class gameController : MonoBehaviour
 
     public float Pee_maxTimeTillGameOver;
     public Slider slider;
+    public Color anxityColour;
+    public Image sliderFill;
     float Pee_curTimeTillGameOver;
+
+    public Sprite anxityMeter;
+
+    public float anxity_maxTimeTillGameOver;
+    float anixty_curTimeTillGameOver;
 
     public DeathScreenFade gameOverUI;
     public DeathScreenFade winUI;
@@ -56,6 +63,35 @@ public class gameController : MonoBehaviour
                     loadAnyScene("Menu");
                 }
 
+            }
+        }
+        else
+        {
+            if(Pee_curTimeTillGameOver > 0)
+            {
+                Pee_curTimeTillGameOver -= Time.deltaTime;
+                slider.value = Pee_curTimeTillGameOver;
+            }
+            else
+            {
+                //sliderFill.sprite = anxityMeter;
+                slider.maxValue = anxity_maxTimeTillGameOver;
+                sliderFill.color = anxityColour;
+                anixty_curTimeTillGameOver += Time.deltaTime;
+                slider.value = anixty_curTimeTillGameOver;
+                if (anixty_curTimeTillGameOver > anxity_maxTimeTillGameOver)
+                {
+                    //GAME OVER 
+                    if (gameOverUI != null)
+                    {
+                        gameOverUI.activeFade();
+                    }
+                    else
+                    {
+                        loadAnyScene("Menu");
+                    }
+
+                }
             }
         }
     }

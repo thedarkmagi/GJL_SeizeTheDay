@@ -11,6 +11,7 @@ public class PuzzleController : MonoBehaviour
     
     public List<puzzlePieces> post_puzzlePieces;
     public List<GameObject> post_partsOfPuzzle;
+    public List<GameObject> post_DoorBlocks;
 
     public bool pre_peeChallenge;
     public bool post_peeChallenge;
@@ -62,7 +63,13 @@ public class PuzzleController : MonoBehaviour
                         room.openDoors = true;
                     FindObjectOfType<MeleeAttack>().disableEquipment();
                     post_peeChallenge = false;
+
+                    BlockRoom(false);
                     // clear matches or something 
+                    for (int i = 0; i < post_partsOfPuzzle.Count; i++)
+                    {
+                        post_partsOfPuzzle[i].SetActive(false);
+                    }
                 }
             }
         }
@@ -100,8 +107,8 @@ public class PuzzleController : MonoBehaviour
             }
             if (room != null)
             {
-                room.openDoors = false;
-                room.lockDoors();
+                //room.openDoors = false;
+                //room.lockDoors();
             }
         }
     }
@@ -131,6 +138,7 @@ public class PuzzleController : MonoBehaviour
             {
                 post_partsOfPuzzle[i].SetActive(false);
             }
+            BlockRoom(false);
         }
 
 
@@ -151,5 +159,14 @@ public class PuzzleController : MonoBehaviour
         }
 
         return solved;
+    }
+
+
+    public void BlockRoom(bool active)
+    {
+        for (int i = 0; i < post_DoorBlocks.Count; i++)
+        {
+            post_DoorBlocks[i].SetActive(active);
+        }
     }
 }
