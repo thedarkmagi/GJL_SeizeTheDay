@@ -16,6 +16,8 @@ public class PuzzleController : MonoBehaviour
     public bool pre_peeChallenge;
     public bool post_peeChallenge;
 
+    public bool postSolved;
+
     bool localPre_pee;
     // Start is called before the first frame update
     void Start()
@@ -63,7 +65,7 @@ public class PuzzleController : MonoBehaviour
                         room.openDoors = true;
                     FindObjectOfType<MeleeAttack>().disableEquipment();
                     post_peeChallenge = false;
-
+                    postSolved = true;
                     BlockRoom(false);
                     // clear matches or something 
                     for (int i = 0; i < post_partsOfPuzzle.Count; i++)

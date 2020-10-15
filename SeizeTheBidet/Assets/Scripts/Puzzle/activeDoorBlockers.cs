@@ -25,10 +25,12 @@ public class activeDoorBlockers : MonoBehaviour
             {
                 if (roomPuzzle != null)
                 {
-                    //room.closeDoors();
-                    //room.openDoors = true;
-                    roomPuzzle.BlockRoom(true);
-                    Debug.Log("blockRooms?");
+                    if (!roomPuzzle.postSolved)
+                    {
+                        //room.closeDoors();
+                        //room.openDoors = true;
+                        roomPuzzle.BlockRoom(true);
+                    }
                 }
 
             }
