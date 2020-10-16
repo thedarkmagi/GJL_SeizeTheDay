@@ -30,7 +30,7 @@ public class unlockDoorsTrigger : MonoBehaviour
                 //room.closeDoors();
                 room.openDoors = true;
             }
-            meshRenderer.material = unlockedRoomMat;
+            //meshRenderer.material = unlockedRoomMat;
         }
     }
 }

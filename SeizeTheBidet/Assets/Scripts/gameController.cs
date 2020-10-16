@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class gameController : MonoBehaviour
 {
     public static gameController instance;
@@ -11,8 +12,21 @@ public class gameController : MonoBehaviour
 
     public float Pee_maxTimeTillGameOver;
     public Slider slider;
+    public Color anxityColour;
+    public Image sliderFill;
+    public Image sliderBackground;
     float Pee_curTimeTillGameOver;
 
+    public Sprite anxityMeter;
+    public Sprite anxityBackground;
+
+    public float anxity_maxTimeTillGameOver;
+    float anixty_curTimeTillGameOver;
+
+    public DeathScreenFade gameOverUI;
+    public DeathScreenFade winUI;
+
+    public float peeDecreaseSpeed;
     private void Awake()
     {
         if (instance != null)
@@ -43,6 +57,45 @@ public class gameController : MonoBehaviour
             if(Pee_curTimeTillGameOver > Pee_maxTimeTillGameOver)
             {
                 //GAME OVER 
+                if(gameOverUI!=null)
+                {
+                    gameOverUI.activeFade();
+                }
+                else
+                {
+                    loadAnyScene("Menu");
+                }
+
+            }
+        }
+        else
+        {
+            if(Pee_curTimeTillGameOver > 0)
+            {
+                Pee_curTimeTillGameOver -= Time.deltaTime *peeDecreaseSpeed;
+                slider.value = Pee_curTimeTillGameOver;
+            }
+            else
+            {
+                sliderFill.sprite = anxityMeter;
+                sliderBackground.sprite = anxityBackground;
+                slider.maxValue = anxity_maxTimeTillGameOver;
+                //sliderFill.color = anxityColour;
+                anixty_curTimeTillGameOver += Time.deltaTime;
+                slider.value = anixty_curTimeTillGameOver;
+                if (anixty_curTimeTillGameOver > anxity_maxTimeTillGameOver)
+                {
+                    //GAME OVER 
+                    if (gameOverUI != null)
+                    {
+                        gameOverUI.activeFade();
+                    }
+                    else
+                    {
+                        loadAnyScene("Menu");
+                    }
+
+                }
             }
         }
     }
@@ -65,5 +118,22 @@ public class gameController : MonoBehaviour
 
 
          
+    }
+
+    public void loadAnyScene(string level)
+    {
+        SceneManager.LoadScene(level);
+    }
+
+    public void activateWinScreen()
+    {
+        if (winUI != null)
+        {
+            winUI.activeFade();
+        }
+        else
+        {
+            loadAnyScene("Menu");
+        }
     }
 }
