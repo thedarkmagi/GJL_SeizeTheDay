@@ -4136,7 +4136,7 @@ MonoBehaviour:
     - id: 29
       fields:
       - title: Title
-        value: New Dialogue Entry
+        value: showgameoverScreen
         type: 0
         typeString: CustomFieldType_Text
       - title: Pictures
@@ -4176,7 +4176,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: GameOverScreen()
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 4
@@ -4198,8 +4198,8 @@ MonoBehaviour:
         y: 679.8978
         width: 160
         height: 30
-    canvasScrollPosition: {x: 0, y: 23.13443}
-    canvasZoom: 0.6699992
+    canvasScrollPosition: {x: 0, y: 0}
+    canvasZoom: 0.9699992
   - id: 5
     fields:
     - title: Title
