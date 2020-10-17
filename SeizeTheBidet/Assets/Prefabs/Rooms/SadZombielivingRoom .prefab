@@ -467,6 +467,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Zombae
       objectReference: {fileID: 0}
+    - target: {fileID: 5870704421305279369, guid: 4b94af5be7b45354ebd36e57c9292be7,
+        type: 3}
+      propertyPath: standardDialogueUISettings.subtitleColor.r
+      value: 0.10980393
+      objectReference: {fileID: 0}
+    - target: {fileID: 5870704421305279369, guid: 4b94af5be7b45354ebd36e57c9292be7,
+        type: 3}
+      propertyPath: standardDialogueUISettings.subtitleColor.g
+      value: 0.3019608
+      objectReference: {fileID: 0}
+    - target: {fileID: 5870704421305279369, guid: 4b94af5be7b45354ebd36e57c9292be7,
+        type: 3}
+      propertyPath: standardDialogueUISettings.subtitleColor.b
+      value: 0.56078434
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b94af5be7b45354ebd36e57c9292be7, type: 3}
 --- !u!4 &3448697006228382460 stripped

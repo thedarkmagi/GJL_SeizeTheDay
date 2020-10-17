@@ -1137,7 +1137,7 @@ MonoBehaviour:
     setSubtitleColor: 1
     applyColorToPrependedName: 0
     prependActorNameSeparator: ': '
-    subtitleColor: {r: 0.3443396, g: 1, b: 0.6900519, a: 1}
+    subtitleColor: {r: 0.10980393, g: 0.3019608, b: 0.56078434, a: 1}
 --- !u!65 &674290773081172681
 BoxCollider:
   m_ObjectHideFlags: 0
