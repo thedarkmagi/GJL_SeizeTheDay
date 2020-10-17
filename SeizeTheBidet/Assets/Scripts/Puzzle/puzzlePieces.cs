@@ -11,6 +11,7 @@ public class puzzlePieces : MonoBehaviour
 
     MeshRenderer meshRenderer;
     MeshFilter meshFilter;
+    public GameObject subObject;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,7 +34,12 @@ public class puzzlePieces : MonoBehaviour
                 //Destroy(gameObject);// for now, apply a damage method here
                 complete = true;
                 //meshRenderer.material = clearedMatt;
-                meshFilter.mesh = clearedMesh;
+                if(clearedMesh!=null)
+                    meshFilter.mesh = clearedMesh;
+                if(subObject!=null)
+                {
+                    subObject.SetActive(true);
+                }
             }
         }
     }

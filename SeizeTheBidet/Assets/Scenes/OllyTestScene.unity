@@ -1688,7 +1688,7 @@ PrefabInstance:
     - target: {fileID: 4845896144898477317, guid: 5d8c7058440847d479ffa2652352638c,
         type: 3}
       propertyPath: puzzleRooms.Array.size
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4845896144898477317, guid: 5d8c7058440847d479ffa2652352638c,
         type: 3}
@@ -1712,6 +1712,12 @@ PrefabInstance:
       propertyPath: puzzleRooms.Array.data[3]
       value: 
       objectReference: {fileID: 7523319949671772513, guid: ff12921b8acde8442a10a0bb2b8a1ecb,
+        type: 3}
+    - target: {fileID: 4845896144898477317, guid: 5d8c7058440847d479ffa2652352638c,
+        type: 3}
+      propertyPath: puzzleRooms.Array.data[4]
+      value: 
+      objectReference: {fileID: 7523319949671772513, guid: 92a184324199aee45b8f3318020d7458,
         type: 3}
     - target: {fileID: 4845896144898477322, guid: 5d8c7058440847d479ffa2652352638c,
         type: 3}
