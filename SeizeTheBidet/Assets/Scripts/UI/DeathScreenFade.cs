@@ -53,7 +53,7 @@ public class DeathScreenFade : MonoBehaviour
 
                     //var respawner = player.GetComponent<CharacterRespawner>();
                     //respawner.Respawn();
-                    gameController.instance.loadAnyScene("Menu");
+                    gameController.instance.loadAnyScene("EndCutscene");
                 }
             }
         }
