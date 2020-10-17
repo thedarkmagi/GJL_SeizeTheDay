@@ -2074,7 +2074,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: RandomizeNextEntry()
+        value: RandomizeNextEntry();LockMovement()
         type: 0
         typeString: 
       conversationID: 4
@@ -2472,7 +2472,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: CompletePuzzle()
+        value: CompletePuzzle();UnlockMovement()
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 4
@@ -4176,7 +4176,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: GameOverScreen()
+        value: GameOverScreen();UnlockMovement()
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 4
