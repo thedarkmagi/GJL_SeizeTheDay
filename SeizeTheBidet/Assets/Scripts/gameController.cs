@@ -30,6 +30,12 @@ public class gameController : MonoBehaviour
 
     public GameObject Player;
     FirstPersonAIO firstPerson;
+
+    public bool winable;
+
+
+
+    public PuzzleController currentPuzzle;
     private void Awake()
     {
         if (instance != null)
@@ -171,5 +177,14 @@ public class gameController : MonoBehaviour
     {
         firstPerson.playerCanMove = true;
         Debug.Log("are unlock movemenet??sequence");
+    }
+
+
+    public void unblockDoors()
+    {
+        if(currentPuzzle!=null)
+        {
+            currentPuzzle.BlockRoom(false);
+        }
     }
 }

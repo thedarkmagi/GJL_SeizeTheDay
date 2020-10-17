@@ -152,6 +152,10 @@ public class PuzzleController : MonoBehaviour
             {
                 post_partsOfPuzzle[i].SetActive(false);
             }
+            for (int i = 0; i < post_SolveItems.Count; i++)
+            {
+                post_SolveItems[i].SetActive(false);
+            }
             BlockRoom(false);
         }
 

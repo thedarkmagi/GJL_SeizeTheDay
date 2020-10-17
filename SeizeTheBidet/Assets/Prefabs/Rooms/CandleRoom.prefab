@@ -247,6 +247,7 @@ MonoBehaviour:
   complete: 0
   clearedMesh: {fileID: 0}
   tag: 0
+  subObject: {fileID: 0}
 --- !u!114 &7120091068560850458
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -259,7 +260,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f3434da02729bb489b1e8e0cedb0d5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amountNeedWalkingOn: 3
+  amountNeedWalkingOn: 1
   speedMulti: 1
   roomMattswap: {fileID: 770796518766559520}
 --- !u!1 &7523319949671772513
@@ -423,6 +424,7 @@ MonoBehaviour:
   - {fileID: 5116161833310200270}
   - {fileID: 4286303061293369832}
   - {fileID: 6126028333795876482}
+  post_SolveItems: []
   pre_peeChallenge: 1
   post_peeChallenge: 1
   postSolved: 0

@@ -30,6 +30,7 @@ public class activeDoorBlockers : MonoBehaviour
                         //room.closeDoors();
                         //room.openDoors = true;
                         roomPuzzle.BlockRoom(true);
+                        gameController.instance.currentPuzzle = roomPuzzle;
                     }
                 }
 

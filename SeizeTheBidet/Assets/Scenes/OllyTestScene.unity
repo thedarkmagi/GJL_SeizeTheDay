@@ -423,6 +423,50 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &499931014
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 499931016}
+  - component: {fileID: 499931015}
+  m_Layer: 0
+  m_Name: Dialogue System Scene Events
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &499931015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 499931014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca55201633b97d3408f439eb84ecb249, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueEntrySceneEvents: []
+--- !u!4 &499931016
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 499931014}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &568380072
 GameObject:
   m_ObjectHideFlags: 0
@@ -638,11 +682,13 @@ MonoBehaviour:
   sliderBackground: {fileID: 1989179853}
   anxityMeter: {fileID: 21300000, guid: 5f8dd4133a7c07342b13f2d3cfe44c83, type: 3}
   anxityBackground: {fileID: 21300000, guid: a8faac53b813aa1419e3226184880e74, type: 3}
-  anxity_maxTimeTillGameOver: 60
+  anxity_maxTimeTillGameOver: 120
   gameOverUI: {fileID: 148605379}
   winUI: {fileID: 755393933}
   peeDecreaseSpeed: 5
   Player: {fileID: 646853152}
+  winable: 0
+  currentPuzzle: {fileID: 0}
 --- !u!4 &718012339
 Transform:
   m_ObjectHideFlags: 0

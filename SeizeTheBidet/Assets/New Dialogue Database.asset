@@ -2472,9 +2472,13 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: CompletePuzzle();UnlockMovement()
+        value: CompletePuzzle();UnlockMovement();UnblockRoom()
         type: 0
         typeString: CustomFieldType_Text
+      - title: EventGuid
+        value: 
+        type: 0
+        typeString: 
       conversationID: 4
       isRoot: 0
       isGroup: 0
@@ -4198,8 +4202,8 @@ MonoBehaviour:
         y: 679.8978
         width: 160
         height: 30
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.9699992
+    canvasScrollPosition: {x: 29.972836, y: 48.466335}
+    canvasZoom: 1.0899991
   - id: 5
     fields:
     - title: Title
@@ -5584,7 +5588,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: CompletePuzzle();UnlockMovement();UnblockRoom()
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 6
@@ -5650,7 +5654,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: GameOverScreen();UnlockMovement()
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 6
@@ -6162,7 +6166,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: GameOverScreen();UnlockMovement()
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 6
@@ -6674,7 +6678,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: GameOverScreen();UnlockMovement()
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 6
@@ -7186,7 +7190,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: GameOverScreen();UnlockMovement()
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 6
@@ -7698,7 +7702,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: GameOverScreen();UnlockMovement()
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 6
@@ -7710,7 +7714,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: gameController.instance.activeLossScreen();
+      userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -7720,8 +7724,8 @@ MonoBehaviour:
         y: 711.682
         width: 160
         height: 30
-    canvasScrollPosition: {x: 0, y: 26.056274}
-    canvasZoom: 0.7599997
+    canvasScrollPosition: {x: 60.94366, y: 47.842197}
+    canvasZoom: 0.9099996
   syncInfo:
     syncActors: 0
     syncItems: 0
