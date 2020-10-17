@@ -108,6 +108,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   room: {fileID: 3579778221290597995}
   unlockedRoomMat: {fileID: 2100000, guid: 30cd859889061244fba284915e4c4e5b, type: 2}
+--- !u!114 &7763114513185507446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2636834539871303750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 821145eff7cb04c4f860fecdf0deaf75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  complete: 0
+  clearedMesh: {fileID: 0}
+  tag: Melee
+  subObject: {fileID: 0}
 --- !u!1 &7523319949671772513
 GameObject:
   m_ObjectHideFlags: 0
@@ -121,6 +137,7 @@ GameObject:
   - component: {fileID: 8316125214893412532}
   - component: {fileID: 3412461487461071768}
   - component: {fileID: 3579778221290597995}
+  - component: {fileID: 8959417235437096499}
   m_Layer: 0
   m_Name: 'SadZombielivingRoom '
   m_TagString: Untagged
@@ -227,6 +244,31 @@ MonoBehaviour:
   - {fileID: 9206295291269339642}
   - {fileID: 4860582352889565427}
   openDoors: 0
+--- !u!114 &8959417235437096499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7523319949671772513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91e929fb28037724c86fb6b118f1525e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  room: {fileID: 0}
+  pre_puzzlePieces: []
+  pre_partsOfPuzzle: []
+  post_puzzlePieces:
+  - {fileID: 7763114513185507446}
+  post_partsOfPuzzle: []
+  post_DoorBlocks: []
+  post_SolveItems: []
+  pre_peeChallenge: 0
+  post_peeChallenge: 1
+  postSolved: 0
+  roomMattNeedsChanging: 0
+  mattSwapper: {fileID: 0}
 --- !u!1001 &1895540425311316425
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -234,6 +276,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7143803086723345371}
     m_Modifications:
+    - target: {fileID: 2736502796578069683, guid: 4b94af5be7b45354ebd36e57c9292be7,
+        type: 3}
+      propertyPath: condition.acceptedTags.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2736502796578069683, guid: 4b94af5be7b45354ebd36e57c9292be7,
+        type: 3}
+      propertyPath: trigger
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2736502796578069683, guid: 4b94af5be7b45354ebd36e57c9292be7,
+        type: 3}
+      propertyPath: condition.acceptedTags.Array.data[0]
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 3860275781815028533, guid: 4b94af5be7b45354ebd36e57c9292be7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -296,6 +353,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b94af5be7b45354ebd36e57c9292be7, type: 3}
+--- !u!1 &2636834539871303750 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4528832261408199055, guid: 4b94af5be7b45354ebd36e57c9292be7,
+    type: 3}
+  m_PrefabInstance: {fileID: 1895540425311316425}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3448697006228382460 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3860275781815028533, guid: 4b94af5be7b45354ebd36e57c9292be7,

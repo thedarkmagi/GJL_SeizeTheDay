@@ -20,6 +20,8 @@ namespace PixelCrushers.DialogueSystem.SequencerCommands
             // you can call Stop() here and remove the Update() method:
             //
             gameController.instance.activeLossScreen();
+
+            //gameController.instance.activeLossScreen();
             Stop();
             //
             // If you want to use a coroutine, use a Start() method in place of or in addition to

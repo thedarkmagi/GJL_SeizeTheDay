@@ -12,6 +12,7 @@ public class PuzzleController : MonoBehaviour
     public List<puzzlePieces> post_puzzlePieces;
     public List<GameObject> post_partsOfPuzzle;
     public List<GameObject> post_DoorBlocks;
+    public List<GameObject> post_SolveItems;
 
     public bool pre_peeChallenge;
     public bool post_peeChallenge;
@@ -78,6 +79,10 @@ public class PuzzleController : MonoBehaviour
                     for (int i = 0; i < post_partsOfPuzzle.Count; i++)
                     {
                         post_partsOfPuzzle[i].SetActive(false);
+                    }
+                    for (int i = 0; i < post_SolveItems.Count; i++)
+                    {
+                        post_SolveItems[i].SetActive(true);
                     }
                 }
             }
@@ -173,9 +178,12 @@ public class PuzzleController : MonoBehaviour
 
     public void BlockRoom(bool active)
     {
-        for (int i = 0; i < post_DoorBlocks.Count; i++)
+        if (post_DoorBlocks.Count>0)
         {
-            post_DoorBlocks[i].SetActive(active);
+            for (int i = 0; i < post_DoorBlocks.Count; i++)
+            {
+                post_DoorBlocks[i].SetActive(active);
+            }
         }
     }
 }

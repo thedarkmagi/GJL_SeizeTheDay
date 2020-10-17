@@ -2472,7 +2472,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: CompletePuzzle()
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 4
@@ -4188,7 +4188,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: gameController.instance.gameOverUI.activeFade();
+      userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []

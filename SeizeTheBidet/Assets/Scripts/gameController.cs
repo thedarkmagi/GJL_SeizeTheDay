@@ -29,7 +29,7 @@ public class gameController : MonoBehaviour
     public float peeDecreaseSpeed;
 
     public GameObject Player;
-    
+    FirstPersonAIO firstPerson;
     private void Awake()
     {
         if (instance != null)
@@ -48,6 +48,7 @@ public class gameController : MonoBehaviour
     {
         Pee_curTimeTillGameOver = 0;
         slider.maxValue = Pee_maxTimeTillGameOver;
+        firstPerson = Player.GetComponent<FirstPersonAIO>();
     }
 
     // Update is called once per frame
@@ -156,5 +157,19 @@ public class gameController : MonoBehaviour
         {
             loadAnyScene("Menu");
         }
+    }
+
+
+
+    public void lockMovement()
+    {
+        firstPerson.playerCanMove = false;
+        Debug.Log("are lock movemenet?? sequence");
+    }
+
+    public void unlockMovement()
+    {
+        firstPerson.playerCanMove = true;
+        Debug.Log("are unlock movemenet??sequence");
     }
 }
