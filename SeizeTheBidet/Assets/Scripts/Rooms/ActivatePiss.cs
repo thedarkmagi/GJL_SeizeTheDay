@@ -28,6 +28,9 @@ public class ActivatePiss : MonoBehaviour
             
             room.closeDoors();
             gameController.instance.pre_pee = false;
+
+            other.gameObject.GetComponent<FirstPersonAIO>().playerCanMove = false;
+
             gameController.instance.depletePissMeter();
         }
 

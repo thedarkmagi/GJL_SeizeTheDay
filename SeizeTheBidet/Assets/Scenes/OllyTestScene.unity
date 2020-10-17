@@ -642,6 +642,7 @@ MonoBehaviour:
   gameOverUI: {fileID: 148605379}
   winUI: {fileID: 755393933}
   peeDecreaseSpeed: 5
+  Player: {fileID: 646853152}
 --- !u!4 &718012339
 Transform:
   m_ObjectHideFlags: 0
@@ -1131,6 +1132,31 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 60650087814564512, guid: 257224f5f94336b449e4429fa496fbb7,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.37216178
+      objectReference: {fileID: 0}
+    - target: {fileID: 60650087814564512, guid: 257224f5f94336b449e4429fa496fbb7,
+        type: 3}
+      propertyPath: m_Center.x
+      value: -0.09499738
+      objectReference: {fileID: 0}
+    - target: {fileID: 60650087814564512, guid: 257224f5f94336b449e4429fa496fbb7,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 0.31469992
+      objectReference: {fileID: 0}
+    - target: {fileID: 60650087814564512, guid: 257224f5f94336b449e4429fa496fbb7,
+        type: 3}
+      propertyPath: m_Center.z
+      value: -0.0000000040281165
+      objectReference: {fileID: 0}
+    - target: {fileID: 60650087814564512, guid: 257224f5f94336b449e4429fa496fbb7,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.37060112
+      objectReference: {fileID: 0}
     - target: {fileID: 504725208379144295, guid: 257224f5f94336b449e4429fa496fbb7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1215,6 +1241,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_BackGroundColor.b
       value: 0.16078432
+      objectReference: {fileID: 0}
+    - target: {fileID: 5316633331187462397, guid: 257224f5f94336b449e4429fa496fbb7,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5316633331187462397, guid: 257224f5f94336b449e4429fa496fbb7,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5316633331187462397, guid: 257224f5f94336b449e4429fa496fbb7,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 257224f5f94336b449e4429fa496fbb7, type: 3}

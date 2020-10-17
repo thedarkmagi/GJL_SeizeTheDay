@@ -27,6 +27,9 @@ public class gameController : MonoBehaviour
     public DeathScreenFade winUI;
 
     public float peeDecreaseSpeed;
+
+    public GameObject Player;
+    
     private void Awake()
     {
         if (instance != null)
@@ -77,6 +80,8 @@ public class gameController : MonoBehaviour
             }
             else
             {
+                Player.GetComponent<FirstPersonAIO>().playerCanMove = true;
+
                 sliderFill.sprite = anxityMeter;
                 sliderBackground.sprite = anxityBackground;
                 slider.maxValue = anxity_maxTimeTillGameOver;
