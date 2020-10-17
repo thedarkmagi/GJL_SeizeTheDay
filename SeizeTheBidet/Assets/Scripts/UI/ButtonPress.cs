@@ -21,4 +21,10 @@ public class ButtonPress : MonoBehaviour
     {
         SceneManager.LoadScene(level);
     }
+
+
+    public void quit()
+    {
+        Application.Quit();
+    }
 }
