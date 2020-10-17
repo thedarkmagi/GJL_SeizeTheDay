@@ -14,9 +14,12 @@ public class DoorScript : MonoBehaviour
     MeshRenderer meshRenderer;
 
     bool hasBeenPreviouslyUnlocked;
+
+    audioRandomiser audio;
     // Start is called before the first frame update
     void Start()
     {
+        audio = GetComponent<audioRandomiser>();
         meshRenderer = GetComponent<MeshRenderer>();
         hasBeenPreviouslyUnlocked = false;
         firstFrame = true;
@@ -42,8 +45,12 @@ public class DoorScript : MonoBehaviour
 
     public void OpenDoor()
     {
-        this.gameObject.SetActive(false);
+        //this.gameObject.SetActive(false);
         hasBeenPreviouslyUnlocked = true;
+
+        meshRenderer.enabled = false;
+        GetComponent<MeshCollider>().enabled = false;
+        GetComponent<BoxCollider>().enabled = false;
         //Destroy(this.gameObject);
     }
 
@@ -53,6 +60,7 @@ public class DoorScript : MonoBehaviour
         {
             meshRenderer.material = prevouslyUnlockedDoor;
             //hasBeenPreviouslyUnlocked = true;
+            
             this.gameObject.SetActive(true);
         }
         
@@ -88,6 +96,7 @@ public class DoorScript : MonoBehaviour
             if (other.gameObject.CompareTag("Player"))
             {
                 OpenDoor();
+                audio.playClip();
                 if(adjencentDoor!=null)
                     adjencentDoor.OpenDoor();
             }
