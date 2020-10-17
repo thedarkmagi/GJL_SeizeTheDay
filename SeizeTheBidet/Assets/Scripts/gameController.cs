@@ -123,6 +123,7 @@ public class gameController : MonoBehaviour
     public void loadAnyScene(string level)
     {
         SceneManager.LoadScene(level);
+        Cursor.lockState = CursorLockMode.None;
     }
 
     public void activateWinScreen()
