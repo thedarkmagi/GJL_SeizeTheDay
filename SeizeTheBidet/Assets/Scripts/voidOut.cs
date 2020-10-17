@@ -20,7 +20,7 @@ public class voidOut : MonoBehaviour
     {
         if(player.transform.position.y < voidOutPlane.position.y + Ymodifier)
         {
-            gameController.instance.gameOverUI.activeFade();
+            gameController.instance.activeLossScreen();
         }
     }
 }

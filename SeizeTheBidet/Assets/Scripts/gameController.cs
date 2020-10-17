@@ -126,6 +126,21 @@ public class gameController : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
     }
 
+
+    public void activeLossScreen()
+    {
+        //GAME OVER 
+        if (gameOverUI != null)
+        {
+            gameOverUI.activeFade();
+        }
+        else
+        {
+            loadAnyScene("Menu");
+
+        }
+    }
+
     public void activateWinScreen()
     {
         if (winUI != null)

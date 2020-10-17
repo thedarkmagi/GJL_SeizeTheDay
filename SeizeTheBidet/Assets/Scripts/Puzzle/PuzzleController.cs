@@ -18,6 +18,8 @@ public class PuzzleController : MonoBehaviour
 
     public bool postSolved;
 
+    public bool roomMattNeedsChanging;
+    public MaterialSwapper mattSwapper;
     bool localPre_pee;
     // Start is called before the first frame update
     void Start()
@@ -67,6 +69,11 @@ public class PuzzleController : MonoBehaviour
                     post_peeChallenge = false;
                     postSolved = true;
                     BlockRoom(false);
+
+                    if(roomMattNeedsChanging)
+                    {
+                        mattSwapper.setMessyMatt(false);
+                    }
                     // clear matches or something 
                     for (int i = 0; i < post_partsOfPuzzle.Count; i++)
                     {
