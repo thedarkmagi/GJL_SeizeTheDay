@@ -13,12 +13,14 @@ public class ActivatePiss : MonoBehaviour
     public AudioClip pissClip;
     public AudioClip bidetClip;
     public AudioClip toiletClip;
+    bool oneTimeOnly;
+
     AudioSource audio;
         // Start is called before the first frame update
     void Start()
     {
        audio = GetComponent<AudioSource>();
-       
+        oneTimeOnly = false;
 
        level = GameObject.FindObjectOfType<levelGeneration>();
     }
@@ -36,13 +38,16 @@ public class ActivatePiss : MonoBehaviour
         {
             //if (level != null)
             //    level.postPee();
-            
-            room.closeDoors();
-            gameController.instance.pre_pee = false;
+            if (!oneTimeOnly)
+            {
+                room.closeDoors();
+                gameController.instance.pre_pee = false;
 
-            other.gameObject.GetComponent<FirstPersonAIO>().playerCanMove = false;
-            StartCoroutine(playpee());
-            gameController.instance.depletePissMeter(Bros);
+                other.gameObject.GetComponent<FirstPersonAIO>().playerCanMove = false;
+                StartCoroutine(playpee());
+                gameController.instance.depletePissMeter(Bros);
+                oneTimeOnly = true;
+            }
         }
 
     }
@@ -58,6 +63,9 @@ public class ActivatePiss : MonoBehaviour
         yield return new WaitForSeconds(audio.clip.length);
         audio.clip = toiletClip;
         audio.Play();
+        //yield return new WaitForSeconds(audio.clip.length);
+
+        gameController.instance.peeFinished = true;
     }
 
 

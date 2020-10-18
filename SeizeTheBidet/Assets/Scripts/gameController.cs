@@ -27,7 +27,9 @@ public class gameController : MonoBehaviour
     public DeathScreenFade winUI;
 
     public float peeDecreaseSpeed;
-    public float peeSoundLenght;
+    public bool peeFinished;
+    float peeSoundLenght = 20;
+    float peeSoundTimeRemaining;
 
     public GameObject Player;
     FirstPersonAIO firstPerson;
@@ -56,6 +58,7 @@ public class gameController : MonoBehaviour
     void Start()
     {
         Pee_curTimeTillGameOver = 0;
+        peeSoundTimeRemaining = peeSoundLenght;
         slider.maxValue = Pee_maxTimeTillGameOver;
         firstPerson = Player.GetComponent<FirstPersonAIO>();
     }
@@ -83,16 +86,21 @@ public class gameController : MonoBehaviour
         }
         else
         {
-            if(Pee_curTimeTillGameOver > 0)
+            if(Pee_curTimeTillGameOver > 0 || peeSoundTimeRemaining > 0)
             {
                 Pee_curTimeTillGameOver -= Time.deltaTime *peeDecreaseSpeed;
+                peeSoundTimeRemaining -= Time.deltaTime;
+
+
                 slider.value = Pee_curTimeTillGameOver;
                 fadeToBlackCutscene.noSceneChange=true;
                 fadeToBlackCutscene.activeFade();
-                if (Pee_curTimeTillGameOver <= 0)
+                if ((Pee_curTimeTillGameOver <= 0 && peeSoundTimeRemaining <=0))
                 {
+                    Debug.Log("begin the FADEback");
                     fadeToBlackCutscene.autoFadeback = true;
-                    fadeToBlackCutscene.activeFade();
+                    fadeToBlackCutscene.fade = false;
+                    //fadeToBlackCutscene.activeFade();
                 }
             }
             else if(cutsceneFinished)
@@ -125,7 +133,7 @@ public class gameController : MonoBehaviour
     public void depletePissMeter(GameObject bros)
     {
         ghostBros = bros;
-        StartCoroutine("depletePiss");
+        //StartCoroutine("depletePiss");
     }
 
     //this doesn't work currently look into it 

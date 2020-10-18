@@ -690,6 +690,7 @@ MonoBehaviour:
   gameOverUI: {fileID: 148605379}
   winUI: {fileID: 755393933}
   peeDecreaseSpeed: 5
+  peeFinished: 0
   Player: {fileID: 646853152}
   winable: 0
   cutsceneFinished: 0
