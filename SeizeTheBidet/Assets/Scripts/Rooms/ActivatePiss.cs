@@ -6,6 +6,7 @@ public class ActivatePiss : MonoBehaviour
 {
     public RoomScript room;
     public levelGeneration level;
+    public GameObject Bros;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,7 +32,7 @@ public class ActivatePiss : MonoBehaviour
 
             other.gameObject.GetComponent<FirstPersonAIO>().playerCanMove = false;
 
-            gameController.instance.depletePissMeter();
+            gameController.instance.depletePissMeter(Bros);
         }
 
     }

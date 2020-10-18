@@ -33,9 +33,11 @@ public class gameController : MonoBehaviour
 
     public bool winable;
 
-
+    public bool cutsceneFinished;
+    public DeathScreenFade fadeToBlackCutscene;
 
     public PuzzleController currentPuzzle;
+    GameObject ghostBros;
     private void Awake()
     {
         if (instance != null)
@@ -84,8 +86,15 @@ public class gameController : MonoBehaviour
             {
                 Pee_curTimeTillGameOver -= Time.deltaTime *peeDecreaseSpeed;
                 slider.value = Pee_curTimeTillGameOver;
+                fadeToBlackCutscene.noSceneChange=true;
+                fadeToBlackCutscene.activeFade();
+                if (Pee_curTimeTillGameOver <= 0)
+                {
+                    fadeToBlackCutscene.autoFadeback = true;
+                    fadeToBlackCutscene.activeFade();
+                }
             }
-            else
+            else if(cutsceneFinished)
             {
                 Player.GetComponent<FirstPersonAIO>().playerCanMove = true;
 
@@ -112,8 +121,9 @@ public class gameController : MonoBehaviour
         }
     }
 
-    public void depletePissMeter()
+    public void depletePissMeter(GameObject bros)
     {
+        ghostBros = bros;
         StartCoroutine("depletePiss");
     }
 
@@ -165,6 +175,19 @@ public class gameController : MonoBehaviour
         }
     }
 
+    public void activateBroDudes()
+    {
+
+        // something about dudes 
+        ghostBros.SetActive(true);
+
+        
+    }
+
+    public void broGhostCutsceneFinished()
+    {
+        cutsceneFinished = true;
+    }
 
 
     public void lockMovement()

@@ -1,0 +1,364 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &7307166666221000626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6635956638926776771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a64578247383140469c45370654a984a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actor: Ghost Bro 2
+  persistentDataName: 
+  portrait: {fileID: 0}
+  spritePortrait: {fileID: 0}
+  barkUISettings:
+    barkUI: {fileID: 0}
+    barkUIOffset: {x: 0, y: 2, z: 0}
+  standardDialogueUISettings:
+    subtitlePanelNumber: 0
+    customSubtitlePanel: {fileID: 0}
+    customSubtitlePanelOffset: {x: 0, y: 0, z: 0}
+    menuPanelNumber: 0
+    customMenuPanel: {fileID: 0}
+    customMenuPanelOffset: {x: 0, y: 0, z: 0}
+    useMenuPanelFor: 0
+    portraitAnimatorController: {fileID: 0}
+    setSubtitleColor: 1
+    applyColorToPrependedName: 0
+    prependActorNameSeparator: ': '
+    subtitleColor: {r: 0.10980393, g: 0.3019608, b: 0.56078434, a: 1}
+--- !u!1 &7307166666470149726
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7307166666470149713}
+  - component: {fileID: 7307166666470149712}
+  - component: {fileID: 7307166666470149727}
+  m_Layer: 0
+  m_Name: Bros
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7307166666470149713
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7307166666470149726}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 142.59387, y: -328.64075, z: 3.2200987}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2617700478501163144}
+  - {fileID: 6295038093364851577}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7307166666470149712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7307166666470149726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c593457cd8105e148906690e1707c592, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trigger: 64
+  condition:
+    luaConditions: []
+    questConditions: []
+    acceptedTags: []
+    acceptedGameObjects: []
+    luaWizardIndex: -1
+    lastEvaluationValue: 0
+  setQuestState: 1
+  questName: 
+  questState: 0
+  setQuestEntryState: 0
+  questEntryNumber: 1
+  questEntryState: 0
+  luaCode: 
+  sequence: 
+  sequenceSpeaker: {fileID: 0}
+  sequenceListener: {fileID: 0}
+  waitOneFrameOnStartOrEnable: 1
+  alertMessage: 
+  textTable: {fileID: 0}
+  alertDuration: 0
+  sendMessages: []
+  barkSource: 0
+  barkConversation: 
+  barkText: 
+  barkTextSequence: 
+  barker: {fileID: 0}
+  barkTarget: {fileID: 0}
+  barkOrder: 0
+  allowBarksDuringConversations: 0
+  skipBarkIfNoValidEntries: 0
+  cacheBarkLines: 0
+  conversation: GhostBrosCutscene1
+  conversationConversant: {fileID: 7307166666470149713}
+  conversationActor: {fileID: 0}
+  startConversationEntryID: -1
+  exclusive: 0
+  skipIfNoValidEntries: 1
+  stopConversationOnTriggerExit: 0
+  stopConversationIfTooFar: 0
+  maxConversationDistance: 5
+  monitorConversationDistanceFrequency: 1
+  showCursorDuringConversation: 0
+  pauseGameDuringConversation: 0
+  setActiveActions: []
+  setEnabledActions: []
+  setAnimatorStateActions: []
+  onExecute:
+    m_PersistentCalls:
+      m_Calls: []
+  useConversationTitlePicker: 1
+  useBarkTitlePicker: 1
+  useQuestNamePicker: 1
+  selectedDatabase: {fileID: 11400000, guid: ea286b85fb5df5a49b73093de87b54a7, type: 2}
+--- !u!114 &7307166666470149727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7307166666470149726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 274b80ab5b659c646ba9338870d14625, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  overrideName: 
+  overrideUseMessage: 
+  maxUseDistance: 5
+  events:
+    onSelect:
+      m_PersistentCalls:
+        m_Calls: []
+    onDeselect:
+      m_PersistentCalls:
+        m_Calls: []
+    onUse:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!114 &7307166666498856884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3393497623181576754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a64578247383140469c45370654a984a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actor: Ghost Bro 1
+  persistentDataName: 
+  portrait: {fileID: 0}
+  spritePortrait: {fileID: 0}
+  barkUISettings:
+    barkUI: {fileID: 0}
+    barkUIOffset: {x: 0, y: 2, z: 0}
+  standardDialogueUISettings:
+    subtitlePanelNumber: 0
+    customSubtitlePanel: {fileID: 0}
+    customSubtitlePanelOffset: {x: 0, y: 0, z: 0}
+    menuPanelNumber: 0
+    customMenuPanel: {fileID: 0}
+    customMenuPanelOffset: {x: 0, y: 0, z: 0}
+    useMenuPanelFor: 0
+    portraitAnimatorController: {fileID: 0}
+    setSubtitleColor: 1
+    applyColorToPrependedName: 0
+    prependActorNameSeparator: ': '
+    subtitleColor: {r: 0.10980393, g: 0.3019608, b: 0.56078434, a: 1}
+--- !u!1001 &7307166667004101734
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 7307166666470149713}
+    m_Modifications:
+    - target: {fileID: 4700550648695117038, guid: 192504d85f78a7b4b9ccf94130d61272,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.675888
+      objectReference: {fileID: 0}
+    - target: {fileID: 4700550648695117038, guid: 192504d85f78a7b4b9ccf94130d61272,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.359253
+      objectReference: {fileID: 0}
+    - target: {fileID: 4700550648695117038, guid: 192504d85f78a7b4b9ccf94130d61272,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.7458949
+      objectReference: {fileID: 0}
+    - target: {fileID: 4700550648695117038, guid: 192504d85f78a7b4b9ccf94130d61272,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4700550648695117038, guid: 192504d85f78a7b4b9ccf94130d61272,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7170834
+      objectReference: {fileID: 0}
+    - target: {fileID: 4700550648695117038, guid: 192504d85f78a7b4b9ccf94130d61272,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4700550648695117038, guid: 192504d85f78a7b4b9ccf94130d61272,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.69698745
+      objectReference: {fileID: 0}
+    - target: {fileID: 4700550648695117038, guid: 192504d85f78a7b4b9ccf94130d61272,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4700550648695117038, guid: 192504d85f78a7b4b9ccf94130d61272,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4700550648695117038, guid: 192504d85f78a7b4b9ccf94130d61272,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 91.628006
+      objectReference: {fileID: 0}
+    - target: {fileID: 4700550648695117038, guid: 192504d85f78a7b4b9ccf94130d61272,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5363898505549319764, guid: 192504d85f78a7b4b9ccf94130d61272,
+        type: 3}
+      propertyPath: m_Name
+      value: DudeBroHead
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 192504d85f78a7b4b9ccf94130d61272, type: 3}
+--- !u!1 &3393497623181576754 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5363898505549319764, guid: 192504d85f78a7b4b9ccf94130d61272,
+    type: 3}
+  m_PrefabInstance: {fileID: 7307166667004101734}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2617700478501163144 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4700550648695117038, guid: 192504d85f78a7b4b9ccf94130d61272,
+    type: 3}
+  m_PrefabInstance: {fileID: 7307166667004101734}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7307166667078151641
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 7307166666470149713}
+    m_Modifications:
+    - target: {fileID: 3617572018286026400, guid: 5be8fda38359d424c81fb9be4d114aad,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.754486
+      objectReference: {fileID: 0}
+    - target: {fileID: 3617572018286026400, guid: 5be8fda38359d424c81fb9be4d114aad,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.359253
+      objectReference: {fileID: 0}
+    - target: {fileID: 3617572018286026400, guid: 5be8fda38359d424c81fb9be4d114aad,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.9653976
+      objectReference: {fileID: 0}
+    - target: {fileID: 3617572018286026400, guid: 5be8fda38359d424c81fb9be4d114aad,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3617572018286026400, guid: 5be8fda38359d424c81fb9be4d114aad,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.69036865
+      objectReference: {fileID: 0}
+    - target: {fileID: 3617572018286026400, guid: 5be8fda38359d424c81fb9be4d114aad,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3617572018286026400, guid: 5be8fda38359d424c81fb9be4d114aad,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7234578
+      objectReference: {fileID: 0}
+    - target: {fileID: 3617572018286026400, guid: 5be8fda38359d424c81fb9be4d114aad,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3617572018286026400, guid: 5be8fda38359d424c81fb9be4d114aad,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3617572018286026400, guid: 5be8fda38359d424c81fb9be4d114aad,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 87.31901
+      objectReference: {fileID: 0}
+    - target: {fileID: 3617572018286026400, guid: 5be8fda38359d424c81fb9be4d114aad,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3617572018286026400, guid: 5be8fda38359d424c81fb9be4d114aad,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.39999998
+      objectReference: {fileID: 0}
+    - target: {fileID: 3617572018286026400, guid: 5be8fda38359d424c81fb9be4d114aad,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.39999998
+      objectReference: {fileID: 0}
+    - target: {fileID: 4143278920435008538, guid: 5be8fda38359d424c81fb9be4d114aad,
+        type: 3}
+      propertyPath: m_Name
+      value: DudeBroRound
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5be8fda38359d424c81fb9be4d114aad, type: 3}
+--- !u!1 &6635956638926776771 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4143278920435008538, guid: 5be8fda38359d424c81fb9be4d114aad,
+    type: 3}
+  m_PrefabInstance: {fileID: 7307166667078151641}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &6295038093364851577 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3617572018286026400, guid: 5be8fda38359d424c81fb9be4d114aad,
+    type: 3}
+  m_PrefabInstance: {fileID: 7307166667078151641}
+  m_PrefabAsset: {fileID: 0}
