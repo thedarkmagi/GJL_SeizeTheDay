@@ -697,6 +697,7 @@ MonoBehaviour:
   cutsceneFinished: 0
   fadeToBlackCutscene: {fileID: 1470325449}
   currentPuzzle: {fileID: 0}
+  postPeeSong: {fileID: 8300000, guid: e4b2677ccb8010a499e5568e3a30f311, type: 3}
 --- !u!4 &718012339
 Transform:
   m_ObjectHideFlags: 0
@@ -723,9 +724,9 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 1f5a5c2335ebb82458746739e67c0667, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.287
+  m_Volume: 0.1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
