@@ -6234,7 +6234,7 @@ MonoBehaviour:
         typeString: CustomFieldType_Text
       - title: Dialogue Text
         value: I have welcomed all manner of beings, from centaurs to eldritch horrors,
-          but none have been quite as disruptive as you. Care to explain yourself?
+          but none have been quite as disruptive as you.
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -7753,7 +7753,7 @@ MonoBehaviour:
         y: 874.28595
         width: 160
         height: 30
-    canvasScrollPosition: {x: 14.117645, y: 65.882355}
+    canvasScrollPosition: {x: 207.0589, y: 0}
     canvasZoom: 0.8499997
   syncInfo:
     syncActors: 0
