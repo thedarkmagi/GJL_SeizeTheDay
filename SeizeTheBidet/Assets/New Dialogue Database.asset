@@ -5522,7 +5522,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: Audio(Witch_Short_04);
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 6
