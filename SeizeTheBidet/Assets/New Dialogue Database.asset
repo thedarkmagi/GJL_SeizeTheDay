@@ -1395,7 +1395,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: Audio(GhostBroChad_01);
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 3
@@ -1420,7 +1420,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 29
-        y: 114
+        y: 113.05661
         width: 160
         height: 30
     - id: 2
@@ -1467,7 +1467,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: Audio(GhostBroKyle_04);
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 3
@@ -1538,7 +1538,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: Audio(GhostBroChad_10);
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 3
@@ -1609,7 +1609,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: Audio(GhostBroChad_14);
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 3
@@ -1681,7 +1681,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: Audio(GhostBroKyle_02);
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 3
@@ -1823,7 +1823,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: Audio(GhostBroChad_13);
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 3
@@ -1916,8 +1916,8 @@ MonoBehaviour:
         y: 248
         width: 160
         height: 30
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 1.06
+    canvasScrollPosition: {x: 9.090881, y: 0}
+    canvasZoom: 0.88000005
   - id: 4
     fields:
     - title: Title
@@ -2099,7 +2099,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: Audio(Zombie_01)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 4
@@ -2401,7 +2401,13 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: CompletePuzzle();UnlockMovement();UnblockRoom()
+        value: 'Audio(Zombie_07);
+
+          CompletePuzzle();
+
+          UnlockMovement();
+
+          UnblockRoom()'
         type: 0
         typeString: CustomFieldType_Text
       - title: EventGuid
@@ -2541,7 +2547,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: Audio(Zombie_05);
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 4
@@ -2613,7 +2619,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: Audio(Zombie_01)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 4
@@ -2987,7 +2993,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: Audio(Zombie_02)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 4
@@ -3361,7 +3367,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: Audio(Zombie_01)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 4
@@ -3736,7 +3742,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: Audio(Zombie_02)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 4
@@ -3779,7 +3785,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 912.105
-        y: 501.05255
+        y: 499.8761
         width: 160
         height: 30
     - id: 25
@@ -4022,7 +4028,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: Haha, the human compost thinks it's people!
+        value: Zombies ARE dumb.
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -4131,8 +4137,8 @@ MonoBehaviour:
         y: 679.8978
         width: 160
         height: 30
-    canvasScrollPosition: {x: 29.972836, y: 48.466335}
-    canvasZoom: 1.0899991
+    canvasScrollPosition: {x: 41.176514, y: 144.706}
+    canvasZoom: 0.84999925
   - id: 5
     fields:
     - title: Title
@@ -4338,7 +4344,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: Audio(Skely_08);
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 5
@@ -4404,7 +4410,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: Audio(Skely_07);
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 5
@@ -4470,7 +4476,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: Audio(Skely_08);
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 5
@@ -4536,7 +4542,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: Audio(Skely_08);
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 5
@@ -4602,7 +4608,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: Audio(Skely_08);
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 5
@@ -4668,7 +4674,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: Audio(Skely_05);
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 5
@@ -4734,7 +4740,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: Audio(Skely_05);
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 5
@@ -4800,7 +4806,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: Audio(Skely_05);
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 5
@@ -4866,7 +4872,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: Audio(Skely_08);
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 5
@@ -4888,8 +4894,8 @@ MonoBehaviour:
         y: 298
         width: 160
         height: 30
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 1
+    canvasScrollPosition: {x: 37.49994, y: 0}
+    canvasZoom: 0.8800001
   - id: 6
     fields:
     - title: Title
@@ -5071,7 +5077,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: Audio(Witch_Long_02)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 6
@@ -5567,7 +5573,7 @@ MonoBehaviour:
         typeString: CustomFieldType_Text
       - title: Dialogue Text
         value: Blech! Your insolent tone shows your lack of remorse. I gave you a
-          chance, but now you shall meet your doom in these wicked halls!
+          chance, but now you shall meet your doom!
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -5649,7 +5655,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: Audio(Witch_Long_02)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 6
@@ -5721,7 +5727,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: Audio(Witch_Short_07)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 6
@@ -6078,8 +6084,8 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: Blech! More like the tornado of disappointment! Luckily, I can make
-          bad weather disappear with a snap of my fingers....
+        value: Your insolent tone shows your lack of remorse. I gave you a chance,
+          but now you must die.
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -6161,7 +6167,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: Audio(Witch_Long_02)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 6
@@ -6239,7 +6245,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: Audio(Witch_Short_07)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 6
@@ -7614,8 +7620,8 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: Blech! Your insolent tone shows your lack of remorse. I gave you a
-          chance, but now it looks like this Halloween will be your downfalloween!
+        value: Your insolent tone shows your lack of remorse. I gave you a chance,
+          but now you shall perish.
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -7653,7 +7659,7 @@ MonoBehaviour:
         y: 711.682
         width: 160
         height: 30
-    canvasScrollPosition: {x: 0, y: 9.546275}
+    canvasScrollPosition: {x: 0, y: 32.87674}
     canvasZoom: 0.7299998
   syncInfo:
     syncActors: 0
