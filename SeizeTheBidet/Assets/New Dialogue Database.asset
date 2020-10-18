@@ -5148,7 +5148,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: Audio(Witch_Short_Inquisitive)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 6
@@ -5588,7 +5588,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: Audio(Witch_Short_01)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 6
@@ -5684,7 +5684,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 313
+        x: 311.86362
         y: 41
         width: 160
         height: 30
@@ -6106,7 +6106,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: Audio(Witch_Short_01)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 6
@@ -6536,7 +6536,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: You'll have to roll a SAN check to comprehend my answer!
+        value: Call me Cthulhu!
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -6607,8 +6607,8 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: Don't need to. But since your EDU wasn't high enough, it seems like
-          you've run out of LUK!
+        value: Your insolent tone shows your lack of remorse. I gave you a chance,
+          but now you shall die!
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -6624,7 +6624,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: Audio(Witch_Short_01)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 6
@@ -6696,7 +6696,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: Audio(Witch_Short_Inquisitive);
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 6
@@ -6768,7 +6768,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: Audio(Witch_Long_02)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 6
@@ -7142,7 +7142,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: Audio(Witch_Short_02)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 6
@@ -7214,7 +7214,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: Audio(Witch_Long_02)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 6
@@ -7286,7 +7286,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: Audio(Witch_Short_07)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 6
@@ -7660,7 +7660,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: Audio(Witch_Short_02)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 6
@@ -7753,8 +7753,8 @@ MonoBehaviour:
         y: 874.28595
         width: 160
         height: 30
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.48999974
+    canvasScrollPosition: {x: 0, y: 98.86369}
+    canvasZoom: 0.8799997
   syncInfo:
     syncActors: 0
     syncItems: 0
