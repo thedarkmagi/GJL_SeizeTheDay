@@ -13,10 +13,13 @@ public struct equipment
 public class Equipable : MonoBehaviour
 {
     public equipment equip;
+    audioRandomiser audio;
+    bool firstTime;
     // Start is called before the first frame update
     void Start()
     {
-        
+        firstTime = false;
+        audio = GetComponent<audioRandomiser>();
     }
 
     // Update is called once per frame
@@ -33,6 +36,15 @@ public class Equipable : MonoBehaviour
             Debug.Log("pickupMatches");
             var equip = collision.gameObject.GetComponentInChildren<MeleeAttack>();
             equip.setEquipment(this.equip);
+
+            if (!firstTime)
+            {
+                if (audio != null)
+                {
+                    audio.playClip();
+                }
+                firstTime = true;
+            }
         }
     }
 
@@ -43,6 +55,16 @@ public class Equipable : MonoBehaviour
             Debug.Log("pickupMatches");
             var equip = other.gameObject.GetComponentInChildren<MeleeAttack>();
             equip.setEquipment(this.equip);
+
+            if (!firstTime)
+            {
+                if (audio != null)
+                {
+                    audio.playClip();
+                }
+
+                firstTime = true;
+            }
         }
     }
 }

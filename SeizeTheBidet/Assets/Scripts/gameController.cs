@@ -43,7 +43,11 @@ public class gameController : MonoBehaviour
     GameObject ghostBros;
 
     public AudioClip postPeeSong;
+
+    public AudioClip victorySound1, victorySound2;
+    public AudioClip gameOverSound;
     AudioSource audio;
+    bool playOnce;
     private void Awake()
     {
         if (instance != null)
@@ -60,6 +64,7 @@ public class gameController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        playOnce = false;
         Pee_curTimeTillGameOver = 0;
         peeSoundTimeRemaining = peeSoundLenght;
         slider.maxValue = Pee_maxTimeTillGameOver;
@@ -120,14 +125,7 @@ public class gameController : MonoBehaviour
                 if (anixty_curTimeTillGameOver > anxity_maxTimeTillGameOver)
                 {
                     //GAME OVER 
-                    if (gameOverUI != null)
-                    {
-                        gameOverUI.activeFade();
-                    }
-                    else
-                    {
-                        loadAnyScene("Menu");
-                    }
+                    activeLossScreen();
 
                 }
             }
@@ -137,23 +135,9 @@ public class gameController : MonoBehaviour
     public void depletePissMeter(GameObject bros)
     {
         ghostBros = bros;
-        //StartCoroutine("depletePiss");
     }
 
-    //this doesn't work currently look into it 
-    Coroutine depletePiss()
-    {
-        do
-        {
-            Pee_curTimeTillGameOver -= Time.deltaTime;
-            slider.value = Pee_curTimeTillGameOver;
 
-            return null;
-        } while (slider.value > 0);
-
-
-         
-    }
 
     public void loadAnyScene(string level)
     {
@@ -165,6 +149,14 @@ public class gameController : MonoBehaviour
     public void activeLossScreen()
     {
         //GAME OVER 
+        if (!playOnce)
+        {
+            audio.Stop();
+            audio.clip = gameOverSound;
+            audio.volume = 0.4f;
+            audio.Play();
+            playOnce = true;
+        }
         if (gameOverUI != null)
         {
             gameOverUI.activeFade();
@@ -178,6 +170,17 @@ public class gameController : MonoBehaviour
 
     public void activateWinScreen()
     {
+        if (!playOnce)
+        {
+            audio.Stop();
+            if (Random.Range(0, 1f) > 0.5f)
+                audio.clip = victorySound1;
+            else
+                audio.clip = victorySound2;
+            audio.volume = 0.4f;
+            audio.Play();
+            playOnce = true;
+        }
         if (winUI != null)
         {
             winUI.activeFade();

@@ -12,11 +12,17 @@ public class puzzlePieces : MonoBehaviour
     MeshRenderer meshRenderer;
     MeshFilter meshFilter;
     public GameObject subObject;
+
+    audioRandomiser audio;
+    bool firstTime;
     // Start is called before the first frame update
     void Start()
     {
         meshRenderer = GetComponent<MeshRenderer>();
         meshFilter = GetComponent<MeshFilter>();
+
+        firstTime = false;
+        audio = GetComponent<audioRandomiser>();
     }
 
     // Update is called once per frame
@@ -34,7 +40,17 @@ public class puzzlePieces : MonoBehaviour
                 //Destroy(gameObject);// for now, apply a damage method here
                 complete = true;
                 //meshRenderer.material = clearedMatt;
-                if(clearedMesh!=null)
+
+                if (!firstTime)
+                {
+                    if (audio != null)
+                    {
+                        audio.playClip();
+                    }
+                    firstTime = true;
+                }
+
+                if (clearedMesh!=null)
                     meshFilter.mesh = clearedMesh;
                 if(subObject!=null)
                 {
