@@ -155,8 +155,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -8.4, y: 58}
-  m_SizeDelta: {x: 702.16077, y: 179.57596}
+  m_AnchoredPosition: {x: -2.5, y: 44.032}
+  m_SizeDelta: {x: 836.8329, y: 179.57596}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &24740210
 MonoBehaviour:
@@ -190,8 +190,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "Wait, you actually peed in a stranger\u2019s house? But that means you
-    had to talk to them!"
+  m_Text: "Wait, you actually peed in a stranger\u2019s house? Wow, I\u2019m impressed!"
 --- !u!222 &24740211
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -538,8 +537,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -8.3, y: 76}
-  m_SizeDelta: {x: 702.16077, y: 179.57596}
+  m_AnchoredPosition: {x: -2.73, y: 42}
+  m_SizeDelta: {x: 808.9697, y: 179.57596}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &689581556
 MonoBehaviour:
@@ -573,8 +572,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: There was a party going on. Why are you so surprised, I am a very cool
-    and well-adjusted person :/
+  m_Text: "why are you so surprised, I\u2019m not that awkward you know :/"
 --- !u!222 &689581557
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -981,8 +979,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 405, y: -1140.9}
-  m_SizeDelta: {x: 100, y: 312.01648}
+  m_AnchoredPosition: {x: 405, y: -1075.5}
+  m_SizeDelta: {x: 100, y: 220.71558}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1610023860
 MonoBehaviour:
@@ -1056,8 +1054,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -413, y: -657.5}
-  m_SizeDelta: {x: 100, y: 279.05316}
+  m_AnchoredPosition: {x: -413, y: -649.3}
+  m_SizeDelta: {x: 100, y: 267.64056}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1657650531
 MonoBehaviour:
@@ -1239,7 +1237,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "LMAOOOOOOOO \u2620\uFE0F ok, see you at the party!"
+  m_Text: LMAOOOOOOOO XD ok, see you at the party!
 --- !u!222 &1946629409
 CanvasRenderer:
   m_ObjectHideFlags: 0

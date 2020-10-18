@@ -11,9 +11,12 @@ public class ErasePentagram : MonoBehaviour
     puzzlePieces puzzlePieces;
 
     public MaterialSwapper roomMattswap;
+
+    audioRandomiser audio;
     // Start is called before the first frame update
     void Start()
     {
+        audio = GetComponent<audioRandomiser>();
         puzzlePieces = GetComponent<puzzlePieces>();
     }
 
@@ -37,6 +40,10 @@ public class ErasePentagram : MonoBehaviour
                 if(playerLastPos != other.gameObject.transform.position)
                 {
                     amountNeedWalkingOn -= Time.deltaTime * speedMulti;
+                    if(!puzzlePieces.complete)
+                    {
+                        audio.playClip();
+                    }
                 }
             }
             else
@@ -55,6 +62,10 @@ public class ErasePentagram : MonoBehaviour
                 if (playerLastPos != other.gameObject.transform.position)
                 {
                     amountNeedWalkingOn -= Time.deltaTime * speedMulti;
+                    if (!puzzlePieces.complete)
+                    {
+                        audio.playClip();
+                    }
                 }
             }
             else

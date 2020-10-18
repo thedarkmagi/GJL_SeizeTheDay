@@ -1916,8 +1916,8 @@ MonoBehaviour:
         y: 248
         width: 160
         height: 30
-    canvasScrollPosition: {x: 9.090881, y: 0}
-    canvasZoom: 0.88000005
+    canvasScrollPosition: {x: 0, y: 0}
+    canvasZoom: 1.06
   - id: 4
     fields:
     - title: Title
@@ -2571,7 +2571,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 290.0313
+        x: 288.76547
         y: 465.74683
         width: 160
         height: 30
@@ -3725,8 +3725,7 @@ MonoBehaviour:
         typeString: CustomFieldType_Text
       - title: Dialogue Text
         value: "Can I ask you something? There is a stereotype that all zombies are
-          dumb. I think I\u2019m pretty smart, but everyone is treating me like an
-          idiot..."
+          dumb. It\u2019s frustrating, everyone is treating me like an idiot..."
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -4137,7 +4136,7 @@ MonoBehaviour:
         y: 679.8978
         width: 160
         height: 30
-    canvasScrollPosition: {x: 41.176514, y: 144.706}
+    canvasScrollPosition: {x: 0, y: 0}
     canvasZoom: 0.84999925
   - id: 5
     fields:
@@ -4981,7 +4980,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: None()
+        value: RandomizeNextEntry()
         type: 0
         typeString: 
       conversationID: 6
@@ -5589,7 +5588,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: GameOverScreen();UnlockMovement()
+        value: 
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 6
@@ -5599,7 +5598,13 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Block
       conditionPriority: 2
-      outgoingLinks: []
+      outgoingLinks:
+      - originConversationID: 6
+        originDialogueID: 8
+        destinationConversationID: 6
+        destinationDialogueID: 38
+        isConnector: 0
+        priority: 2
       conditionsString: 
       userScript: gameController.instance.activeLossScreen();
       onExecute:
@@ -6101,7 +6106,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: GameOverScreen();UnlockMovement()
+        value: 
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 6
@@ -6111,7 +6116,13 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Block
       conditionPriority: 2
-      outgoingLinks: []
+      outgoingLinks:
+      - originConversationID: 6
+        originDialogueID: 15
+        destinationConversationID: 6
+        destinationDialogueID: 38
+        isConnector: 0
+        priority: 2
       conditionsString: 
       userScript: gameController.instance.activeLossScreen();
       onExecute:
@@ -6613,7 +6624,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: GameOverScreen();UnlockMovement()
+        value: 
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 6
@@ -6623,7 +6634,13 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Block
       conditionPriority: 2
-      outgoingLinks: []
+      outgoingLinks:
+      - originConversationID: 6
+        originDialogueID: 22
+        destinationConversationID: 6
+        destinationDialogueID: 38
+        isConnector: 0
+        priority: 2
       conditionsString: 
       userScript: gameController.instance.activeLossScreen();
       onExecute:
@@ -7125,7 +7142,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: GameOverScreen();UnlockMovement()
+        value: 
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 6
@@ -7135,7 +7152,13 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Block
       conditionPriority: 2
-      outgoingLinks: []
+      outgoingLinks:
+      - originConversationID: 6
+        originDialogueID: 30
+        destinationConversationID: 6
+        destinationDialogueID: 38
+        isConnector: 0
+        priority: 2
       conditionsString: 
       userScript: gameController.instance.activeLossScreen();
       onExecute:
@@ -7637,6 +7660,77 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 6
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 6
+        originDialogueID: 37
+        destinationConversationID: 6
+        destinationDialogueID: 38
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 1384.8708
+        y: 711.682
+        width: 160
+        height: 30
+    - id: 38
+      fields:
+      - title: Title
+        value: showGameOverScreen
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 7
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
         value: GameOverScreen();UnlockMovement()
         type: 0
         typeString: CustomFieldType_Text
@@ -7655,12 +7749,12 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1384.8708
-        y: 711.682
+        x: 778.57166
+        y: 874.28595
         width: 160
         height: 30
-    canvasScrollPosition: {x: 0, y: 32.87674}
-    canvasZoom: 0.7299998
+    canvasScrollPosition: {x: 0, y: 0}
+    canvasZoom: 0.48999974
   syncInfo:
     syncActors: 0
     syncItems: 0

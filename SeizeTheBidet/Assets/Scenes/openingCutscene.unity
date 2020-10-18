@@ -190,7 +190,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "I\u2019m omw but I have no car, but I need to pee"
+  m_Text: "lol I heard. I\u2019m omw but have no car \U0001F625:'( And i gotta pee."
 --- !u!222 &24740211
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -572,7 +572,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "Pee in a stranger\u2019s house, it\u2019s cool"
+  m_Text: "Go pee in a random house. They won\u2019t mind, promise. "
 --- !u!222 &689581557
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -34,7 +34,8 @@ public class audioRandomiser : MonoBehaviour
                 float randPitch = defaultPitch + Random.Range(0, pitchRandoAmount * 2) - pitchRandoAmount;
                 audioSource.pitch = randPitch;
             }
-            audioSource.Play();
+            if(!audioSource.isPlaying)
+                audioSource.Play();
         }
     }
 
