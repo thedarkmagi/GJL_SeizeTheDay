@@ -5,12 +5,10 @@ using UnityEngine;
 public class SmashSkeley : MonoBehaviour
 {
     public puzzlePieces puzzlePieces;
-
-    audioRandomiser audio;
     // Start is called before the first frame update
     void Start()
     {
-        audio = GetComponent<audioRandomiser>();
+        
     }
 
     // Update is called once per frame
@@ -29,7 +27,6 @@ public class SmashSkeley : MonoBehaviour
                 puzzlePieces.complete = true;
                 //this disapears a skeleyton
                 var rends = GetComponentsInChildren<Renderer>();
-                audio.playClip();
                 foreach (var item in rends)
                 {
                     item.enabled = false;
