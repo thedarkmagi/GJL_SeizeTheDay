@@ -41,6 +41,9 @@ public class gameController : MonoBehaviour
 
     public PuzzleController currentPuzzle;
     GameObject ghostBros;
+
+    public AudioClip postPeeSong;
+    AudioSource audio;
     private void Awake()
     {
         if (instance != null)
@@ -60,6 +63,7 @@ public class gameController : MonoBehaviour
         Pee_curTimeTillGameOver = 0;
         peeSoundTimeRemaining = peeSoundLenght;
         slider.maxValue = Pee_maxTimeTillGameOver;
+        audio = GetComponent<AudioSource>();
         firstPerson = Player.GetComponent<FirstPersonAIO>();
     }
 
@@ -189,8 +193,9 @@ public class gameController : MonoBehaviour
 
         // something about dudes 
         ghostBros.SetActive(true);
-
-        
+        //
+        audio.clip = postPeeSong;
+        audio.Play();
     }
 
     public void broGhostCutsceneFinished()
