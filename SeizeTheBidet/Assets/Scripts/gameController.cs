@@ -83,14 +83,7 @@ public class gameController : MonoBehaviour
             if(Pee_curTimeTillGameOver > Pee_maxTimeTillGameOver)
             {
                 //GAME OVER 
-                if(gameOverUI!=null)
-                {
-                    gameOverUI.activeFade();
-                }
-                else
-                {
-                    loadAnyScene("Menu");
-                }
+                activeLossScreen();
 
             }
         }
