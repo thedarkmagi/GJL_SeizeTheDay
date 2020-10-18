@@ -7,10 +7,15 @@ public class RoomScript : MonoBehaviour
     public List<DoorScript> doors;
 
     public bool openDoors;
+
+
+    audioRandomiser audio;
+    bool firstTime;
     // Start is called before the first frame update
     void Start()
     {
-        
+        firstTime = false;
+        audio = GetComponent<audioRandomiser>();
     }
 
     // Update is called once per frame
@@ -19,6 +24,15 @@ public class RoomScript : MonoBehaviour
         if(openDoors)
         {
             unlockDoors();
+            if(!firstTime)
+            {
+                if(audio!=null)
+                {
+                    audio.playClip();
+                }
+
+                firstTime = true;
+            }
         }
     }
 
