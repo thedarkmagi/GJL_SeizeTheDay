@@ -43,7 +43,7 @@ public class gameController : MonoBehaviour
     GameObject ghostBros;
 
     public AudioClip postPeeSong;
-
+    bool startPostPeeSong;
     public AudioClip victorySound1, victorySound2;
     public AudioClip gameOverSound;
     AudioSource audio;
@@ -65,6 +65,7 @@ public class gameController : MonoBehaviour
     void Start()
     {
         playOnce = false;
+        startPostPeeSong = false;
         Pee_curTimeTillGameOver = 0;
         peeSoundTimeRemaining = peeSoundLenght;
         slider.maxValue = Pee_maxTimeTillGameOver;
@@ -197,8 +198,13 @@ public class gameController : MonoBehaviour
         // something about dudes 
         ghostBros.SetActive(true);
         //
-        audio.clip = postPeeSong;
-        audio.Play();
+        if (!startPostPeeSong)
+        {
+            audio.Stop();
+            audio.clip = postPeeSong;
+            audio.Play();
+            startPostPeeSong = true;
+        }
     }
 
     public void broGhostCutsceneFinished()

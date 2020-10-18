@@ -14,6 +14,8 @@ public class PuzzleController : MonoBehaviour
     public List<GameObject> post_DoorBlocks;
     public List<GameObject> post_SolveItems;
 
+    public GameObject dispellSound;
+
     public bool pre_peeChallenge;
     public bool post_peeChallenge;
 
@@ -70,6 +72,11 @@ public class PuzzleController : MonoBehaviour
                     post_peeChallenge = false;
                     postSolved = true;
                     BlockRoom(false);
+
+                    if(dispellSound!=null)
+                    {
+                        dispellSound.SetActive(true);
+                    }
 
                     if(roomMattNeedsChanging)
                     {

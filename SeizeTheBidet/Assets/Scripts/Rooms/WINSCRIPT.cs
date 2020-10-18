@@ -30,7 +30,7 @@ public class WINSCRIPT : MonoBehaviour
                 //if (adjencentDoor != null)
                 //    adjencentDoor.OpenDoor();
                 //do a win
-                gameController.instance.activateWinScreen();
+                    gameController.instance.activateWinScreen();
                 }
             }
 
