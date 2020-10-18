@@ -7275,8 +7275,8 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: I spent weeks planning this party, the decorations, the food, the
-          guests and whatnot. Why did you intrude on this carefully-planned event?
+        value: I spent weeks planning this party; the decorations, the food, the
+          guests... Why did you intrude on this carefully-planned event?
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -7824,8 +7824,8 @@ MonoBehaviour:
         y: 612.91156
         width: 160
         height: 30
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.7899998
+    canvasScrollPosition: {x: 500.60706, y: 189.24927}
+    canvasZoom: 0.72999984
   syncInfo:
     syncActors: 0
     syncItems: 0
