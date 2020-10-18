@@ -285,7 +285,7 @@ GameObject:
   - component: {fileID: 208201090}
   - component: {fileID: 208201089}
   m_Layer: 0
-  m_Name: PhoneTimeline
+  m_Name: PhoneTimeline1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -319,7 +319,7 @@ PlayableDirector:
   m_GameObject: {fileID: 208201088}
   m_Enabled: 1
   serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: 4462be8d430f0cb4da3f71fc16efac29, type: 2}
+  m_PlayableAsset: {fileID: 11400000, guid: ce716564952ad0f4b97bde2de9f7886a, type: 2}
   m_InitialState: 1
   m_WrapMode: 0
   m_DirectorUpdateMode: 1
@@ -329,6 +329,14 @@ PlayableDirector:
     value: {fileID: 1390802747}
   - key: {fileID: 1130211830460497964, guid: 4462be8d430f0cb4da3f71fc16efac29, type: 2}
     value: {fileID: 1565045169}
+  - key: {fileID: 2701485741428668071, guid: 4462be8d430f0cb4da3f71fc16efac29, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -1322979478368895854, guid: ce716564952ad0f4b97bde2de9f7886a, type: 2}
+    value: {fileID: 1390802747}
+  - key: {fileID: 1130211830460497964, guid: ce716564952ad0f4b97bde2de9f7886a, type: 2}
+    value: {fileID: 1565045169}
+  - key: {fileID: 2701485741428668071, guid: ce716564952ad0f4b97bde2de9f7886a, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &208201091
