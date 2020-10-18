@@ -27,6 +27,7 @@ public class ErasePentagram : MonoBehaviour
         {
             puzzlePieces.complete = true;
             roomMattswap.setMessyMatt(true);
+            audio.stopClip();
         }
     }
 

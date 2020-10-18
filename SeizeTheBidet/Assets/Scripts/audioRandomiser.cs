@@ -39,6 +39,17 @@ public class audioRandomiser : MonoBehaviour
         }
     }
 
+    public void stopClip()
+    {
+        if (audioClips != null)
+        {
+            
+            if (audioSource.isPlaying)
+                audioSource.Stop();
+        }
+    }
+
+
     public AudioClip randClip()
     {
         int i = Random.Range(0, audioClips.Count);
