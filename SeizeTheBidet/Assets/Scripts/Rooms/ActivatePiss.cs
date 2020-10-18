@@ -7,10 +7,20 @@ public class ActivatePiss : MonoBehaviour
     public RoomScript room;
     public levelGeneration level;
     public GameObject Bros;
-    // Start is called before the first frame update
+
+
+
+    public AudioClip pissClip;
+    public AudioClip bidetClip;
+    public AudioClip toiletClip;
+    AudioSource audio;
+        // Start is called before the first frame update
     void Start()
     {
-        level = GameObject.FindObjectOfType<levelGeneration>();
+       audio = GetComponent<AudioSource>();
+       
+
+       level = GameObject.FindObjectOfType<levelGeneration>();
     }
 
     // Update is called once per frame
@@ -31,9 +41,25 @@ public class ActivatePiss : MonoBehaviour
             gameController.instance.pre_pee = false;
 
             other.gameObject.GetComponent<FirstPersonAIO>().playerCanMove = false;
-
+            StartCoroutine(playpee());
             gameController.instance.depletePissMeter(Bros);
         }
 
     }
+
+
+    IEnumerator playpee()
+    {
+        audio.clip = pissClip;
+        audio.Play();
+        yield return new WaitForSeconds(audio.clip.length);
+        audio.clip = bidetClip;
+        audio.Play();
+        yield return new WaitForSeconds(audio.clip.length);
+        audio.clip = toiletClip;
+        audio.Play();
+    }
+
+
+
 }

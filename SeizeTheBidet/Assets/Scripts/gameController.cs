@@ -27,6 +27,7 @@ public class gameController : MonoBehaviour
     public DeathScreenFade winUI;
 
     public float peeDecreaseSpeed;
+    public float peeSoundLenght;
 
     public GameObject Player;
     FirstPersonAIO firstPerson;

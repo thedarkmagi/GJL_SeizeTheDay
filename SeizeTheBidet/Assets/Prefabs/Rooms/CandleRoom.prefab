@@ -260,7 +260,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f3434da02729bb489b1e8e0cedb0d5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amountNeedWalkingOn: 1
+  amountNeedWalkingOn: 2
   speedMulti: 1
   roomMattswap: {fileID: 770796518766559520}
 --- !u!1 &7523319949671772513

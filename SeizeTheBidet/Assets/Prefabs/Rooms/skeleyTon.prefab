@@ -549,6 +549,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: DrunkSkelli (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1845176286219694123, guid: e8cae5376657ed046834da24abefd537,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 474d601a8d9b38e4bb978f7a42dabd86, type: 2}
     - target: {fileID: 4923927904906474232, guid: e8cae5376657ed046834da24abefd537,
         type: 3}
       propertyPath: m_Enabled

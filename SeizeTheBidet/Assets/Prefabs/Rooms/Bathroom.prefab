@@ -124,6 +124,9 @@ MonoBehaviour:
   room: {fileID: 2303572835594307340}
   level: {fileID: 0}
   Bros: {fileID: 523565020566263855}
+  pissClip: {fileID: 8300000, guid: 53deef5dedc907b40b5a70e0ed19cc33, type: 3}
+  bidetClip: {fileID: 8300000, guid: a910d4fb015248c44a997100a64a228e, type: 3}
+  toiletClip: {fileID: 8300000, guid: 82e5985e51d0ef74c8dff299d478499b, type: 3}
 --- !u!1 &8110155524033052325
 GameObject:
   m_ObjectHideFlags: 0
@@ -427,32 +430,72 @@ PrefabInstance:
     - target: {fileID: 2617700478501163144, guid: bc414975540fdc347bd8b82ba0119f74,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2617700478501163144, guid: bc414975540fdc347bd8b82ba0119f74,
-        type: 3}
-      propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2617700478501163144, guid: bc414975540fdc347bd8b82ba0119f74,
         type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 2617700478501163144, guid: bc414975540fdc347bd8b82ba0119f74,
+        type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.11
+      value: -0.73
+      objectReference: {fileID: 0}
+    - target: {fileID: 4916600075641637649, guid: bc414975540fdc347bd8b82ba0119f74,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.94
+      objectReference: {fileID: 0}
+    - target: {fileID: 4916600075641637649, guid: bc414975540fdc347bd8b82ba0119f74,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4916600075641637649, guid: bc414975540fdc347bd8b82ba0119f74,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.89
       objectReference: {fileID: 0}
     - target: {fileID: 6295038093364851577, guid: bc414975540fdc347bd8b82ba0119f74,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0
+      value: 0.0000000590296
       objectReference: {fileID: 0}
     - target: {fileID: 6295038093364851577, guid: bc414975540fdc347bd8b82ba0119f74,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.011506677
       objectReference: {fileID: 0}
     - target: {fileID: 6295038093364851577, guid: bc414975540fdc347bd8b82ba0119f74,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.51
+      value: 2.5294468
+      objectReference: {fileID: 0}
+    - target: {fileID: 6295038093364851577, guid: bc414975540fdc347bd8b82ba0119f74,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.00000001455518
+      objectReference: {fileID: 0}
+    - target: {fileID: 6295038093364851577, guid: bc414975540fdc347bd8b82ba0119f74,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.95370066
+      objectReference: {fileID: 0}
+    - target: {fileID: 6295038093364851577, guid: bc414975540fdc347bd8b82ba0119f74,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.000000015252906
+      objectReference: {fileID: 0}
+    - target: {fileID: 6295038093364851577, guid: bc414975540fdc347bd8b82ba0119f74,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.3007575
+      objectReference: {fileID: 0}
+    - target: {fileID: 6295038093364851577, guid: bc414975540fdc347bd8b82ba0119f74,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 144.994
       objectReference: {fileID: 0}
     - target: {fileID: 7307166666470149713, guid: bc414975540fdc347bd8b82ba0119f74,
         type: 3}
@@ -517,7 +560,7 @@ PrefabInstance:
     - target: {fileID: 7307166666470149726, guid: bc414975540fdc347bd8b82ba0119f74,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bc414975540fdc347bd8b82ba0119f74, type: 3}
