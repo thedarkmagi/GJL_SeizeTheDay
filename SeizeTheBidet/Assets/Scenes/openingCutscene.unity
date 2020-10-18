@@ -1315,8 +1315,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "Dude, Valentin is holding a massive party. His parents are mega rich,
-    there\u2019s a CHOCOLATE FOUNTAIN! Get over here NOW!"
+  m_Text: "Dude, Valentin is holding a huge Halloween party. He\u2019s like mega
+    rich, there\u2019s a friggin CHOCOLATE FOUNTAIN. Get over here NOW!"
 --- !u!222 &1953357616
 CanvasRenderer:
   m_ObjectHideFlags: 0

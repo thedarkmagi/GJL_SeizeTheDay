@@ -5684,8 +5684,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 311.86362
-        y: 41
+        x: 285.9813
+        y: 71.58823
         width: 160
         height: 30
     - id: 10
@@ -5774,8 +5774,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 554
-        y: 49
+        x: 559.8824
+        y: 57.235306
         width: 160
         height: 30
     - id: 11
@@ -6195,12 +6195,6 @@ MonoBehaviour:
         destinationDialogueID: 17
         isConnector: 0
         priority: 2
-      - originConversationID: 6
-        originDialogueID: 16
-        destinationConversationID: 6
-        destinationDialogueID: 21
-        isConnector: 0
-        priority: 2
       conditionsString: 
       userScript: 
       onExecute:
@@ -6208,7 +6202,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 942
+        x: 919.64703
         y: 35
         width: 160
         height: 30
@@ -6285,6 +6279,12 @@ MonoBehaviour:
         destinationDialogueID: 20
         isConnector: 0
         priority: 2
+      - originConversationID: 6
+        originDialogueID: 17
+        destinationConversationID: 6
+        destinationDialogueID: 21
+        isConnector: 0
+        priority: 2
       conditionsString: 
       userScript: 
       onExecute:
@@ -6292,8 +6292,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 944
-        y: 107
+        x: 955.36365
+        y: 117.26738
         width: 160
         height: 30
     - id: 18
@@ -6576,8 +6576,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1050.2191
-        y: 286.36987
+        x: 1016.1283
+        y: 278.41528
         width: 160
         height: 30
     - id: 22
@@ -6811,7 +6811,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 617.0668
-        y: 495.81775
+        y: 496.99426
         width: 160
         height: 30
     - id: 25
@@ -7753,8 +7753,8 @@ MonoBehaviour:
         y: 874.28595
         width: 160
         height: 30
-    canvasScrollPosition: {x: 522.7275, y: 440.90927}
-    canvasZoom: 0.8799997
+    canvasScrollPosition: {x: 14.117645, y: 65.882355}
+    canvasZoom: 0.8499997
   syncInfo:
     syncActors: 0
     syncItems: 0
